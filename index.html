@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EKON 380 Ders Hazırlık Modülü</title>
+<meta name="description" content="EKON 380 Küresel Ekonomik ve Finansal Analiz dersi için özetler, vurgulanmış önemli noktalar ve örnek sınav soruları.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230f4c5c%27/%3E%3Crect x=%274%27 y=%2716%27 width=%2724%27 height=%279%27 fill=%27%23ffe24d%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-size=%2720%27 font-family=%27Georgia%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27%23fff%27%3EE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,650;1,7..72,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+  /* Tema ve vurgu tercihini sayfa çizilmeden uygula (titremeyi önler) */
+  try {
+    var t = localStorage.getItem("ekon380.theme"); if (t) document.documentElement.setAttribute("data-theme", t);
+    if (localStorage.getItem("ekon380.marks") === "off") document.documentElement.classList.add("marks-off");
+  } catch (e) {}
+</script>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="tool menu-btn" id="menuBtn" aria-expanded="false" aria-controls="rail">Konular</button>
+  <a class="brand" href="#home">EKON 380 <span>ders hazırlık modülü</span></a>
+  <button class="tool" id="markBtn" aria-pressed="true" title="Fosforlu vurguları aç veya kapat"><span class="swatch"></span>Vurgular</button>
+  <button class="tool" id="themeBtn" aria-label="Koyu ve açık tema arasında geç">Tema</button>
+</header>
+
+<div class="shell">
+<nav class="rail" id="rail" aria-label="Konu listesi">
+  <div class="prog" id="prog">
+    <span id="progText">0 / 6 sunum bitti</span>
+    <div class="bar"><i id="progBar"></i></div>
+  </div>
+  <h2>Sunumlar</h2>
+  <ol>
+    <li><a href="#u1" data-u="1"><span class="n">1</span><span>Küresel ekonomi<small>Hafta 1–2</small></span></a></li>
+    <li><a href="#u2" data-u="2"><span class="n">2</span><span>Küresel finansal piyasalar<small>Hafta 2</small></span></a></li>
+    <li><a href="#u3" data-u="3"><span class="n">3</span><span>Faiz, risk ve piyasa etkinliği<small>Hafta 3</small></span></a></li>
+    <li><a href="#u4" data-u="4"><span class="n">4</span><span>Finansal kurumlar ve krizler<small>Hafta 4</small></span></a></li>
+    <li><a href="#u5" data-u="5"><span class="n">5</span><span>Bankalar, merkez bankaları, para politikası<small>Hafta 5</small></span></a></li>
+    <li><a href="#u6" data-u="6"><span class="n">6</span><span>Para piyasaları<small>Hafta 6</small></span></a></li>
+  </ol>
+  <h2>Sınav provası</h2>
+  <ol>
+    <li><a href="#quiz" data-u="q"><span class="n">?</span><span>Örnek quizler ve deneme sınavı<small>78 soru, anında geri bildirim</small></span></a></li>
+  </ol>
+</nav>
+
+<main id="main" tabindex="-1">
+
+<!-- ================= ANA SAYFA ================= -->
+<section class="view active" id="home" aria-label="Ana sayfa">
+  <div class="hero">
+    <div class="kicker">EKON 380 · Banu Erkök Yiğit</div>
+    <h1>Küresel Ekonomik ve Finansal Analiz</h1>
+    <p class="lede">Altı sunumun özeti, açıklaması ve en sonda sınav provası. Önemli yerler fosforlu kalemle işaretli.</p>
+    <p class="sample">Faiz oranları yükseldiğinde <mark>tahvil fiyatları düşer</mark>. 100 dolarlık bir borç %10 faizle bir yıl sonra <mark class="num">110 dolar</mark> eder. <mark class="trap">Faiz oranı</mark> ile <mark class="trap">getiri oranı</mark> aynı şey değildir.</p>
+  </div>
+
+  <div class="legend" aria-label="Vurgu renkleri">
+    <div><span><mark>Sarı</mark></span><span>Kavram, tanım, kural. Sınavda doğrudan sorulur.</span></div>
+    <div><span><mark class="num">Yeşil</mark></span><span>Rakam, formül, hesap sonucu.</span></div>
+    <div><span><mark class="trap">Pembe</mark></span><span>Birbirine karıştırılan ayrımlar ve tuzaklar.</span></div>
+  </div>
+
+  <h2 style="margin-top:2rem">Sunumlar</h2>
+  <div class="units">
+    <a href="#u1"><span class="n">1</span><span class="t">Küresel ekonomi</span><span class="d">Ekonomi ile finans, küresel ekonominin beş bileşeni, kurumlar, dört büyük kriz.</span></a>
+    <a href="#u2"><span class="n">2</span><span class="t">Küresel finansal piyasalar</span><span class="d">Beş piyasa, beş işlev, entegrasyonun faydası ve bulaşma riski.</span></a>
+    <a href="#u3"><span class="n">3</span><span class="t">Faiz, risk ve piyasa etkinliği</span><span class="d">Bugünkü değer, vadeye kadar getiri, reel faiz, risk primi, kredi notları, getiri eğrisi, EMH.</span></a>
+    <a href="#u4"><span class="n">4</span><span class="t">Finansal kurumlar ve krizler</span><span class="d">Aracılar neden var, ters seçim, ahlaki tehlike, 2007–09 krizi.</span></a>
+    <a href="#u5"><span class="n">5</span><span class="t">Bankalar, merkez bankaları, para politikası</span><span class="d">Merkez bankası işlevleri, dört araç, politika hedefleri, TCMB ve Fed.</span></a>
+    <a href="#u6"><span class="n">6</span><span class="t">Para piyasaları</span><span class="d">Yedi kısa vadeli araç, katılımcılar, hesaplamalı örnekler.</span></a>
+    <a href="#quiz" class="quiz-link"><span class="n">?</span><span class="t">Örnek quizler ve deneme sınavı</span><span class="d">Her sunum için 13 soru ve 20 soruluk karışık deneme. Açıklamalı.</span></a>
+  </div>
+
+  <h2>Ders planı</h2>
+  <p>Aşağıda işaretli haftalar bu modülün kapsadığı haftalardır. Yedinci hafta tahvil piyasaları, sonrasında vize var; üçüncü sunumdaki faiz ve tahvil fiyatı mantığı o haftaya hazırlıktır.</p>
+  <table class="weeks">
+    <tr class="covered"><td>Hafta 1</td><td>Derse giriş</td><td>Sunum 1</td></tr>
+    <tr class="covered"><td>Hafta 2</td><td>Global ekonomi ve finansal piyasalara bakış</td><td>Sunum 1–2</td></tr>
+    <tr class="covered"><td>Hafta 3</td><td>Finansal piyasalar</td><td>Sunum 3</td></tr>
+    <tr class="covered"><td>Hafta 4</td><td>Finansal kurumlar</td><td>Sunum 4</td></tr>
+    <tr class="covered"><td>Hafta 5</td><td>Bankalar, merkez bankaları ve para politikası</td><td>Sunum 5</td></tr>
+    <tr class="covered"><td>Hafta 6</td><td>Para piyasaları</td><td>Sunum 6</td></tr>
+    <tr><td>Hafta 7</td><td>Tahvil piyasaları</td><td></td></tr>
+    <tr class="exam"><td>Hafta 8</td><td>Vize sınavı</td><td></td></tr>
+    <tr><td>Hafta 9</td><td>Döviz piyasaları</td><td></td></tr>
+    <tr><td>Hafta 10</td><td>Hisse senedi piyasaları</td><td></td></tr>
+    <tr><td>Hafta 11</td><td>Uluslararası finansal sistem</td><td></td></tr>
+    <tr><td>Hafta 12</td><td>Öncü ve artçı ekonomik göstergeler</td><td></td></tr>
+    <tr><td>Hafta 13</td><td>Kredi derecelendirme yöntemleri</td><td></td></tr>
+    <tr><td>Hafta 14–15</td><td>Küresel risk yönetimi ve düzenlemeler</td><td></td></tr>
+  </table>
+
+  <div class="note plain">
+    <span class="label">Bu modülü nasıl kullanmalı?</span>
+    <p>Önce her sunumun başındaki “Tek bakışta” kutusunu oku, sonra konu anlatımına in. Sarı, yeşil ve pembe işaretleri ezberle. Bitirince sunumun quizini çöz; yanlış yaptığın sorunun açıklaması neyi kaçırdığını gösterir. Sınavdan önce deneme sınavını çöz.</p>
+    <p>Bu modül slaytların metnine dayanır. Slaytlardaki grafik ve tablo görselleri burada yeniden çizilmedi; bir grafiği hatırlaman gereken yerde orijinal slayta bakmak iyi olur.</p>
+  </div>
+</section>
+
+<!-- ================= SUNUM 1 ================= -->
+<section class="view" id="u1" aria-label="Sunum 1">
+  <header class="u-head">
+    <div class="week">Sunum 1 · Hafta 1–2</div>
+    <h1>Küresel ekonomi</h1>
+    <p class="lede">Ülke ekonomileri birbirine bağlı tek bir sistem gibi davranır. Bu sunum o sistemin parçalarını ve finansal piyasalarla ilişkisini anlatır.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li><mark>Ekonomi</mark> kaynakların üretimi, tüketimi ve dağıtımıyla ilgilenir; <mark>finans</mark> serveti yönetmek ve büyütmekle.</li>
+      <li><mark>Küresel ekonomi</mark> ulusal ekonomilerin birbirine bağlı olduğu sistemdir: mal, hizmet, sermaye, teknoloji ve işgücü sınırları aşar.</li>
+      <li>Ekonomi koşulları belirler, <mark>finansal piyasalar bu koşulları dünyaya iletir ve yayar</mark>.</li>
+      <li>Beş bileşen: <mark>ticaret, sermaye akışları, küresel değer zincirleri, işgücü hareketliliği, politika bağımlılığı</mark>.</li>
+      <li>Dört büyük örnek: <mark class="num">1997–98</mark> Asya krizi, <mark class="num">2008–09</mark> küresel finansal kriz, <mark class="num">2020</mark> COVID-19, <mark class="num">2022</mark> Rusya–Ukrayna savaşı.</li>
+      <li>Düzenleyici çerçeve: <mark>IMF, Dünya Bankası, DTÖ</mark>; forumlar <mark>G7, G20</mark>.</li>
+    </ul>
+  </div>
+
+  <h2>Dersin amacı</h2>
+  <p>Ders sonunda şunları yapabilmen beklenir<span class="src">Sunum 1, s.2</span>:</p>
+  <ul>
+    <li>Güncel küresel ekonomik ve finansal gelişmeleri anlamak,</li>
+    <li>önemli göstergeleri yorumlamak,</li>
+    <li>başlıca bilgi kaynaklarını tanımak ve veriye nasıl ulaşılacağını bilmek,</li>
+    <li>kredi derecelendirme kuruluşlarının nasıl çalıştığını görmek,</li>
+    <li>teoriyi gerçek hayatla bağlamak.</li>
+  </ul>
+
+  <h2>Ekonomi ve finans</h2>
+  <div class="pair">
+    <div>
+      <h4>Ekonomi</h4>
+      <ul>
+        <li>Bir <mark>sosyal bilim</mark>: mal ve hizmetlerin üretimi, tüketimi, dağıtımı.</li>
+        <li>Kaynakların nasıl dağıtıldığına bakar.</li>
+        <li>Politika kararlarının piyasa ve toplum üzerindeki etkisini inceler.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Finans</h4>
+      <ul>
+        <li><mark>Servetin yönetimi ve büyütülmesi</mark>.</li>
+        <li>Yatırım, risk yönetimi, kurumsal finans.</li>
+        <li>Ekonomik ilkeleri gerçek hayat kararlarına uygular.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note plain">
+    <span class="label">Kısaca</span>
+    <p>Ekonomi “sistem nasıl çalışıyor?” sorusudur. Finans “bu sistemde parayı nasıl yönetirim?” sorusudur.</p>
+  </div>
+
+  <h2>Küresel ekonominin tanımı</h2>
+  <p><mark>Küresel ekonomi</mark>, ulusal ekonomilerin uluslararası sistem içindeki karşılıklı bağlantısıdır. Yurt içi faaliyetin ötesine geçer ve <mark>mal, hizmet, sermaye, teknoloji ve işgücünün sınır ötesi hareketini</mark> kapsar<span class="src">s.9</span>.</p>
+  <div class="pair">
+    <div>
+      <h4>Makro düzey</h4>
+      <p>Toplam sonuçlar: büyüme, ticaret dengesi, finansal istikrar.</p>
+    </div>
+    <div>
+      <h4>Mikro düzey</h4>
+      <p>Bireysel aktörler: firmaların değer zincirlerine katılımı, farklı piyasalarda tüketici talebi.</p>
+    </div>
+  </div>
+
+  <h2>Küresel ekonomi ve finansal piyasalar neden bağlı?</h2>
+  <p>İki yönlü bir ilişki var<span class="src">s.10–13</span>. Birindeki değişim ötekini hemen etkiler.</p>
+  <div class="chain" aria-label="Ekonomiden piyasaya etki zinciri">
+    <span class="s">Ekonomi büyür</span><i>›</i><span>Şirketler daha çok kazanır</span><i>›</i><span>Hisse fiyatları yükselir</span><i>›</i><span>Yatırımcı tahvil alır, yurt dışına yatırım yapar</span>
+  </div>
+  <div class="chain" aria-label="Piyasadan ekonomiye etki zinciri">
+    <span class="s">Piyasa çöker</span><i>›</i><span>Servet ve güven düşer</span><i>›</i><span>Harcama azalır</span><i>›</i><span>Resesyon</span>
+  </div>
+  <ul>
+    <li>Finansal piyasalar hükümetlere, şirketlere ve hanehalklarına <mark>yatırım ve harcama için gereken parayı sağlar</mark>.</li>
+    <li>Hisse veya konut fiyatları artınca insanların serveti artar ve daha çok harcarlar. Keskin düşüş resesyon getirebilir.</li>
+    <li>Enflasyon ya da faiz değişince <mark>tahvil piyasası, döviz kurları ve yatırım akışları</mark> hızla tepki verir.</li>
+  </ul>
+  <div class="note example">
+    <span class="label">Örnek: Fed faiz artırırsa</span>
+    <p>ABD Merkez Bankası (Fed) faizi artırınca sermaye gelişmekte olan piyasalardan çıkabilir. O ülkelerin para birimi zayıflar ve borçlarını ödemek zorlaşır<span class="src">s.12</span>.</p>
+  </div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Slaytın özet cümlesi: <mark>küresel ekonomi koşulları belirler (büyüme, ticaret, enflasyon, politika); finansal piyasalar bu koşulları dünya çapında ileten ve yayan kanallardır.</mark></p>
+  </div>
+
+  <h2>Dört örnek kriz</h2>
+  <p>Dördünü de tek cümleyle anlatabilmelisin: ne tetikledi, nasıl yayıldı, ne öğretti.</p>
+  <ol class="timeline">
+    <li>
+      <span class="when">1997–1998</span><span class="what">Asya finansal krizi</span>
+      <p>Hızlı büyüme büyük yabancı sermaye girişleriyle finanse edilmişti. Zayıf noktalar: <mark>aşırı kaldıraçlı bankalar, sabit döviz kurları, zayıf kredi uygulamaları</mark>.</p>
+      <p>Güven çöktü, sermaye aniden geri döndü. Tayland bahtı ve Endonezya rupisi çöktü, bankacılık krizleri çıktı, derin resesyon yaşandı. <mark>Tayland, Endonezya ve Güney Kore'de IMF müdahalesi</mark> gerekti.</p>
+    </li>
+    <li>
+      <span class="when">2008–2009</span><span class="what">Küresel finansal kriz</span>
+      <p>ABD konut piyasası çöktü. Sorun <mark>MBS ve CDO</mark> gibi menkul kıymetleştirilmiş ipotek ürünleriyle dünya bankalarına yayıldı. Bankalar arası kredi durdu, likidite sıkıştı, borsalar çöktü, eşzamanlı küresel resesyon geldi.</p>
+      <p>Ders: finansal istikrarsızlık tüm ekonomiyi çökertebilir.</p>
+    </li>
+    <li>
+      <span class="when">2020</span><span class="what">COVID-19 pandemisi</span>
+      <p>Sağlık krizi hızla ekonomik ve finansal krize döndü. Karantinalar ticareti ve üretimi daralttı; <mark class="num">Mart 2020</mark>'de belirsizlik yüzünden borsalar çöktü. Merkez bankaları ve hükümetler büyük parasal ve mali destekle karşılık verdi.</p>
+      <p>Ders: politikalar ekonomik temelleri ve finansal istikrarı birlikte ele almalı.</p>
+    </li>
+    <li>
+      <span class="when">2022 ve sonrası</span><span class="what">Rusya–Ukrayna savaşı</span>
+      <p>Küresel <mark>enerji ve gıda tedarikini</mark> bozdu, dünya çapında enflasyonu yükseltti. Emtia fiyatları, döviz kurları ve tahvil getirileri oynadı. <mark>Rusya'ya yaptırımlar</mark> (SWIFT kısıtlamaları, varlık dondurma) ticareti ve sermaye akışlarını yeniden şekillendirdi.</p>
+      <p>Ders: ekonomi politikası finansal piyasalarla doğrudan etkileşim içindedir.</p>
+    </li>
+  </ol>
+
+  <h2>Küresel ekonominin beş bileşeni</h2>
+
+  <h3>1. Uluslararası ticaret</h3>
+  <p>Küresel ekonomik faaliyetin temeli: sınır ötesi mal ve hizmet alışverişi<span class="src">s.19–20</span>. Üç teori adı sorulabilir:</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Teori</th><th>Kişi</th></tr>
+    <tr><td>Karşılaştırmalı üstünlük</td><td><mark>Ricardo</mark></td></tr>
+    <tr><td>Yeni ticaret teorisi</td><td><mark>Krugman</mark></td></tr>
+    <tr><td>Çekim modelleri</td><td><mark>Tinbergen</mark></td></tr>
+  </table></div>
+  <ul>
+    <li>Teoriler ülkelerin neden uzmanlaştığını ve büyüme, istihdam, refah üzerindeki etkisini açıklar.</li>
+    <li>Ticaret anlaşmaları, gümrük tarifeleri ve tarife dışı engeller ticaret kalıplarını şekillendirir.</li>
+    <li><mark>Ticaret dengesi ve cari işlemler hesabı</mark> ekonomik sağlığın ve dış sürdürülebilirliğin temel göstergeleridir.</li>
+  </ul>
+
+  <h3>2. Sermaye ve yatırım akışları</h3>
+  <div class="tablewrap"><table class="t">
+    <tr><th></th><th>DYY (doğrudan yabancı yatırım)</th><th>YPY (yabancı portföy yatırımı)</th></tr>
+    <tr><td>Vade</td><td><mark>Uzun vadeli</mark></td><td><mark>Kısa vadeli</mark></td></tr>
+    <tr><td>Etkisi</td><td>Teknoloji transferi ve istihdamla büyümeyi destekler</td><td>Finansal piyasa oynaklığını artırır</td></tr>
+  </table></div>
+  <ul>
+    <li>İkisi de döviz kurlarını, finansal istikrarı ve gelir dağılımını etkiler.</li>
+    <li>Sermaye hareketliliği ekonomileri birbirine bağlar ama özellikle <mark>gelişmekte olan piyasaları oynaklığa, ani duruşlara ve borç krizlerine</mark> açık bırakır.</li>
+    <li>Sermaye akışlarının düzenlenmesi ve IMF gibi kuruluşların rolü bu yüzden kritiktir.</li>
+  </ul>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>DYY fabrika kurmak gibi kalıcı yatırımdır. YPY hisse ve tahvil alıp gerektiğinde hızla çıkabilen paradır. Krizde ani çıkış yapan YPY'dir.</p>
+  </div>
+
+  <h3>3. Küresel üretim ağları ve değer zincirleri (KDZ)</h3>
+  <ul>
+    <li>Günümüz küresel ekonomisinin belirleyici özelliği: <mark>üretimin sınır ötesi parçalanması</mark>.</li>
+    <li>Firmalar üretim aşamalarını ülkeler arasında dağıtarak maliyet, verimlilik ve pazara erişimi optimize eder.</li>
+    <li>Katılım verimliliği, rekabet gücünü ve sanayide yükselme kapasitesini etkiler.</li>
+    <li>Risk: karmaşık tedarik zincirine bağımlılık zayıflık yaratır. <mark>COVID-19 aksaklıkları ve jeopolitik gerilimlerde</mark> görüldü.</li>
+  </ul>
+
+  <h3>4. İşgücü hareketliliği ve göç</h3>
+  <ul>
+    <li>Kalıcı göç veya geçici iş sözleşmeleri; ücretleri, demografiyi, büyümeyi etkiler.</li>
+    <li><strong>Ev sahibi ülke:</strong> göç <mark>işgücü açığını azaltır</mark>, büyümeyi destekler.</li>
+    <li><strong>Gönderen ülke:</strong> yurt dışından gelen <mark>havaleler ödemeler dengesini</mark> destekler.</li>
+    <li>Tartışma konuları: uyum, ücret rekabeti, sosyal refah. Göç hem küreselleşmenin itici gücü hem de politik tartışma kaynağıdır.</li>
+  </ul>
+
+  <h3>5. Politika bağımlılığı</h3>
+  <ul>
+    <li>Bir ülkenin politikaları diğerlerine yayılır. Örnek: <mark>Fed'in faiz kararları</mark> küresel sermaye akışlarını, gelişmekte olan piyasaların borç sürdürülebilirliğini ve kurları etkiler.</li>
+    <li>Büyük ekonomilerdeki mali teşvikler ticaret ortaklarında talep yayılımı yaratır.</li>
+    <li>Koordinasyon gerekir: <mark>IMF, G20, DTÖ</mark>. Amaç olumsuz dışsallıkları azaltmak ve kolektif istikrarı desteklemek.</li>
+  </ul>
+
+  <h2>Temel kurumlar ve çerçeveler</h2>
+  <div class="tablewrap"><table class="t">
+    <caption>Küresel kurumlar</caption>
+    <tr><th>Kurum</th><th>Ne yapar</th></tr>
+    <tr><td>IMF</td><td><mark>Ödemeler dengesi krizlerinde finansal yardım</mark>, gözetim, politika danışmanlığı; döviz kurlarını istikrara kavuşturur, makro reformları destekler.</td></tr>
+    <tr><td>Dünya Bankası Grubu</td><td><mark>Uzun vadeli kalkınma finansmanı</mark>, yoksulluğun azaltılması, altyapı yatırımı. Özellikle gelişmekte olan ülkelerde.</td></tr>
+    <tr><td>DTÖ</td><td>Küresel ticaret kurallarını denetler, <mark>uyuşmazlıkları çözer</mark>, serbest ve adil ticareti destekler.</td></tr>
+  </table></div>
+  <ul>
+    <li><strong>Bölgesel çerçeveler:</strong> AB, ASEAN, AfCFTA. Entegrasyonu ve politika uyumunu destekler.</li>
+    <li><strong>Küresel forumlar:</strong> G7, G20. Finansal krizlere, pandemilere ve iklim değişikliğine yönelik müdahaleleri koordine eder.</li>
+  </ul>
+  <div class="note trap">
+    <span class="label">Eleştirel not</span>
+    <p>Bu çerçeveler <mark class="trap">güç asimetrilerini de yansıtır</mark>: gelişmiş ekonomiler genellikle orantısız bir etkiye sahiptir.</p>
+  </div>
+  <div class="note plain">
+    <span class="label">Kısaca</span>
+    <p>IMF kriz anında yardım eder, Dünya Bankası uzun vadeli kalkınmayı finanse eder, DTÖ ticaret kurallarının hakemidir.</p>
+  </div>
+
+  <h2>Sürükleyici unsurlar ve zorluklar</h2>
+  <p>Yapısal güçler entegrasyonu tetikler ama yeni zorluklar da yaratır<span class="src">s.30–31</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Unsur</th><th>İki yüzü</th></tr>
+    <tr><td>Teknolojik değişim</td><td>Verimlilik ve bağlantı kazancı; ama iş kaybı ve artan eşitsizlik.</td></tr>
+    <tr><td>Jeopolitik gerilimler</td><td>Ticaret savaşları, yaptırımlar, çatışmalar bağlantıları ve tedarik zincirlerini aksatır, belirsizliği artırır.</td></tr>
+    <tr><td>İklim değişikliği ve sürdürülebilirlik</td><td>Düşük karbonlu geçiş büyük yatırım ister; iklim riskleri tarımı, altyapıyı ve finansal istikrarı tehdit eder.</td></tr>
+    <tr><td>Demografik değişimler</td><td>Gelişmiş ekonomilerde yaşlanma sağlık ve emeklilik yükünü artırır; gelişmekte olan bölgelerde nüfus artışı hem fırsat hem işsizlik riski.</td></tr>
+    <tr><td>Küresel eşitsizlik</td><td>Kalıcı gelir ve servet farkları büyümeyi zayıflatır, siyasi istikrarsızlığı besler.</td></tr>
+    <tr><td>Küreselleşme</td><td><mark>Doğrusal bir süreç değil</mark>; fırsatlara ve risklere sürekli uyum sağlama süreci.</td></tr>
+  </table></div>
+
+  <h2>Finansal piyasalarla bağlantı</h2>
+  <div class="pair">
+    <div>
+      <h4>Ekonomiden piyasaya</h4>
+      <ul>
+        <li>Güçlü GSYİH büyümesi kârları ve borsa değerlemelerini yükseltir.</li>
+        <li>Enflasyon baskısı faizleri ve tahvil getirilerini etkiler.</li>
+        <li>Döviz kuru; ticaret dengesini, sermaye akışlarını ve politika güvenilirliğini yansıtır.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Piyasadan ekonomiye</h4>
+      <ul>
+        <li>Banka krizi veya borsa çöküşü resesyona yol açabilir (2008).</li>
+        <li>Sermaye kaçışı kurları ve kamu maliyesini istikrarsızlaştırır.</li>
+        <li>Emtia fiyat dalgalanması üreticiyi ve tüketiciyi etkiler.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar: piyasaların çifte rolü</span>
+    <p>Sorunsuz işlediğinde piyasalar <mark>büyüme ve istikrar motorudur</mark>; krizlerde güçlü bir <mark>risk kaynağıdır</mark>.</p>
+  </div>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#home"><small>Geri</small>Ana sayfa</a>
+    <a class="next" href="#u2"><small>Sıradaki</small>Sunum 2: Küresel finansal piyasalar</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u1">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u1">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= SUNUM 2 ================= -->
+<section class="view" id="u2" aria-label="Sunum 2">
+  <header class="u-head">
+    <div class="week">Sunum 2 · Hafta 2</div>
+    <h1>Küresel finansal piyasalar</h1>
+    <p class="lede">Paranın tasarruf edenden ihtiyacı olana aktığı sistemin bölümleri, görevleri ve küreselleşmenin getirdiği yeni risk.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li>Finansal piyasalar <mark>tasarruf sahiplerini borç alanlarla buluşturur</mark>; sermayenin toplanmasını, dağıtılmasını ve alınıp satılmasını sağlar.</li>
+      <li>Beş ana bölüm: <mark>hisse senedi, tahvil, döviz (FX), türev ürün, emtia</mark>.</li>
+      <li>Beş temel işlev: <mark>sermaye tahsisi, likidite, fiyat keşfi, risk yönetimi, ekonomik sinyal verme</mark>.</li>
+      <li>Piyasaların başarısı <mark>şeffaflığa, likiditeye ve güvene</mark> bağlıdır.</li>
+      <li>Entegrasyon etkinlik ve çeşitlendirme getirir; ama <mark>bulaşma, oynaklık ve kriz</mark> riskini de.</li>
+      <li>Piyasalar istikrarlı dönemde <mark>büyüme motoru</mark>, kriz döneminde <mark>bulaşma kanalıdır</mark>.</li>
+    </ul>
+  </div>
+
+  <h2>Finansal piyasa nedir?</h2>
+  <p>Finansal piyasalar bireylerin, firmaların ve devletlerin sermaye bulduğu ve dağıttığı sistemler ve platformlardır<span class="src">s.8</span>.</p>
+  <div class="chain" aria-label="Fon akışı">
+    <span class="s">Fon fazlası olanlar<br>(yatırımcı, hanehalkı, firma)</span><i>›</i><span>Finansal piyasa ve kurumlar<br>(banka, yatırım fonu, borsa)</span><i>›</i><span class="s">Fona ihtiyacı olanlar<br>(işletme, devlet, tüketici)</span>
+  </div>
+  <ul>
+    <li>Kaynak aktarımı <mark>verimli yatırımı teşvik eder, etkinliği artırır, uzun vadeli büyümeyi destekler</mark>.</li>
+    <li>Kullandığı araçlar: tahvil, hisse senedi, türev ürün, döviz.</li>
+    <li>Sermaye ve finansal araçlar ülkeler arasında kolayca hareket eder; yatırımcılar portföylerini çeşitlendirip riski azaltır.</li>
+    <li>Büyük bir ekonomideki politika değişikliği tüm dünyada tahvil getirilerini, kurları ve hisse fiyatlarını etkileyebilir.</li>
+  </ul>
+  <div class="note plain">
+    <span class="label">Kısaca</span>
+    <p>Piyasa, parası olanla parası lazım olanı buluşturan düzenek. Bankalar, fonlar ve borsalar bu buluşmayı yapan kurumlardır.</p>
+  </div>
+
+  <h2>Beş ana bölüm</h2>
+
+  <h3>Hisse senedi piyasaları</h3>
+  <ul>
+    <li>Şirketler hisse satarak <mark>uzun vadeli sermaye</mark> bulur.</li>
+    <li>Yatırımcı hisseyi alınca <mark>şirkete ortak olur</mark>; getirisi <mark>temettü veya sermaye kazancı</mark>dır.</li>
+    <li>Platformlar: New York Borsası <mark>(NYSE)</mark>, Londra Borsası <mark>(LSE)</mark>, Tokyo Borsası <mark>(TSE)</mark>; Türkiye'de Borsa İstanbul.</li>
+    <li>Endeksler genel performansı izler: <mark>S&amp;P 500, MSCI World</mark>.</li>
+    <li>Yatırımcı güveninin ve ekonomik sağlığın önemli göstergesidir.</li>
+  </ul>
+
+  <h3>Tahvil piyasaları</h3>
+  <ul>
+    <li>Devletlere ve şirketlere <mark>borç finansmanı</mark> sağlar.</li>
+    <li>Tahvil, ihraççının yatırımcıdan borçlandığı araçtır: <mark>düzenli faiz öder, vade sonunda anaparayı geri öder</mark>.</li>
+    <li>Devlet tahvili örnekleri: ABD Hazine tahvilleri, Alman devlet tahvilleri <mark>(Bund)</mark>.</li>
+    <li>Getiriler enflasyonu, para politikasını ve kredi riskini yansıtır.</li>
+    <li>Belirsizlik arttığında yatırımcı güvenli tahvillere yönelir, bu tahvillerin <mark>getirisi düşer</mark>.</li>
+  </ul>
+  <div class="note plain">
+    <span class="label">Neden getiri düşer?</span>
+    <p>Herkes aynı güvenli tahvili almak isterse fiyatı yükselir. Tahvilin ödeyeceği para sabit olduğu için fiyat yükselince getiri düşer. Bu mantığı Sunum 3'te sayılarla göreceksin.</p>
+  </div>
+
+  <h3>Döviz (FX) piyasaları</h3>
+  <ul>
+    <li>Para birimlerinin alınıp satıldığı piyasa. <mark>Dünyanın en büyük ve en likit piyasası</mark>; <mark>haftada beş gün, günde 24 saat</mark> işler.</li>
+    <li>Uluslararası ticareti ve yatırımı mümkün kılar.</li>
+    <li>Kurlar ihracatta rekabet gücünü, enflasyonu ve sermaye akımlarını etkiler.</li>
+    <li>Küresel işlemlerde <mark>ABD doları baskın</mark>; euro, yen ve Çin yuanı da önemli.</li>
+  </ul>
+
+  <h3>Türev ürün piyasaları</h3>
+  <ul>
+    <li>Değeri hisse, tahvil, emtia gibi bir <mark>dayanak varlığa bağlı</mark> sözleşmelerdir.</li>
+    <li>Yaygın türler: <mark>vadeli işlem (futures), opsiyon, swap</mark>.</li>
+    <li>Fiyat, faiz veya kur riskini yönetmeye yarar. Piyasa etkinliğini artırabilir, ama <mark>karmaşıklığı ve riski de artırır</mark>.</li>
+    <li>Kötüye kullanımı <mark>2008 krizinin başlıca nedenlerinden</mark> biriydi: tek bölümdeki istikrarsızlık tüm sistemi etkileyebilir.</li>
+  </ul>
+
+  <h3>Emtia piyasaları</h3>
+  <ul>
+    <li>Petrol, doğal gaz, altın, tarım ürünleri gibi hammaddeler.</li>
+    <li>Fiyatlar enflasyonu, dış ticaret dengesini ve geliri etkiler; <mark>doğal kaynağa bağımlı ekonomilerde</mark> etki daha belirgindir.</li>
+    <li>Fiyatlar <mark>küresel talebe, hava koşullarına ve jeopolitik gerginliğe</mark> duyarlıdır.</li>
+  </ul>
+
+  <div class="tablewrap"><table class="t">
+    <caption>Beş piyasa karşılaştırması</caption>
+    <tr><th>Piyasa</th><th>İşlem gören</th><th>Örnek</th></tr>
+    <tr><td>Hisse senedi</td><td>Şirket ortaklığı</td><td>NYSE, LSE, TSE, S&amp;P 500</td></tr>
+    <tr><td>Tahvil</td><td>Borçlanma aracı</td><td>ABD Hazine tahvili, Bund</td></tr>
+    <tr><td>Döviz</td><td>Para birimleri</td><td>USD, EUR, JPY, CNY</td></tr>
+    <tr><td>Türev</td><td>Dayanak varlığa bağlı sözleşme</td><td>Futures, opsiyon, swap</td></tr>
+    <tr><td>Emtia</td><td>Hammadde</td><td>Petrol, altın, tarım ürünü</td></tr>
+  </table></div>
+
+  <h2>Finansal piyasaların beş işlevi</h2>
+  <p>Hafızada tutmak için sırayı hatırla: sermaye, likidite, fiyat, risk, sinyal.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>İşlev</th><th>Anlamı</th></tr>
+    <tr>
+      <td>Sermaye tahsisi</td>
+      <td>Hanehalkı, firma ve devletin tasarruflarını yatırım için fona ihtiyaç duyanlara aktarır. Kaynaklar <mark>en verimli sektörlere</mark> akar; büyüme, yenilik, altyapı ve istihdam doğar.</td>
+    </tr>
+    <tr>
+      <td>Likidite sağlama</td>
+      <td>Likidite, varlığın <mark>büyük fiyat değişimine yol açmadan</mark> alınıp satılabilme kolaylığıdır. Çok sayıda alıcı ve satıcıyı bir araya getirerek sağlanır. Yüksek likidite piyasa istikrarını artırır.</td>
+    </tr>
+    <tr>
+      <td>Fiyat keşfi</td>
+      <td>Fiyatın <mark>arz ve talep yoluyla</mark> belirlenmesi. Fiyat, yatırımcıların değer ve risk konusundaki ortak beklentisini yansıtır. Şeffaf ve aktif piyasada yeni bilgiye hızla uyum sağlar.</td>
+    </tr>
+    <tr>
+      <td>Risk yönetimi</td>
+      <td>Vadeli işlem ve opsiyon gibi türevlerle fiyat, faiz, kur riskine karşı korunma; <mark>varlık, sektör ve ülke çeşitlendirmesi</mark> ile tekil riski azaltma.</td>
+    </tr>
+    <tr>
+      <td>Ekonomik sinyal verme</td>
+      <td>Yükselen hisse fiyatları çoğu zaman <mark>yatırımcı güvenini</mark>, düşen tahvil getirileri <mark>daha yavaş büyüme veya düşük enflasyon beklentisini</mark> gösterir. Politika yapıcılar ve işletmeler kararlarında bunu kullanır.</td>
+    </tr>
+  </table></div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Bir senaryo verilip “hangi işlev?” diye sorulur. İpuçları: <em>tasarruftan yatırıma akış</em> = sermaye tahsisi; <em>kolayca alıp satabilmek</em> = likidite; <em>arz-talep ile oluşan fiyat</em> = fiyat keşfi; <em>türevle korunma</em> = risk yönetimi; <em>fiyat hareketinden ekonomi hakkında çıkarım</em> = sinyal.</p>
+  </div>
+
+  <h2>Küreselleşme ve entegrasyon</h2>
+  <p>Teknolojik gelişme, serbestleşme (deregülasyon) ve işlemlerin dijitalleşmesi sermayenin sınırlar arasında hareketini kolaylaştırdı. Sonuç: <mark>tek bir küresel finans ağı</mark><span class="src">s.28</span>.</p>
+  <div class="pair">
+    <div>
+      <h4>Faydalar</h4>
+      <ul>
+        <li>Daha fazla etkinlik</li>
+        <li>Çeşitlendirme: farklı bölgelerde varlık tutarak riski dağıtmak</li>
+        <li>Şirketler uluslararası piyasalardan fon bulur</li>
+        <li>Gelişmekte olan ekonomiler küresel sermayeye erişir, kalkınır</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Riskler</h4>
+      <ul>
+        <li><mark class="trap">Bulaşma</mark>: bir piyasadaki kriz ticaret, yatırım ve güven kanalıyla diğerlerine geçer</li>
+        <li>Oynaklık</li>
+        <li>Krizler</li>
+        <li>2008 krizi ve COVID-19 şokların ne kadar hızlı yayıldığını gösterdi</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Gözetim kuruluşları</h3>
+  <p>Finansın küreselleşmesi uluslararası kurumların ve düzenleyicilerin önemini artırdı. Üçü sınır ötesi riskleri izler ve ortak standartları teşvik eder<span class="src">s.30</span>:</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Kısaltma</th><th>Açılımı</th></tr>
+    <tr><td>IMF</td><td>Uluslararası Para Fonu</td></tr>
+    <tr><td>BIS</td><td>Uluslararası Ödemeler Bankası (Bank for International Settlements)</td></tr>
+    <tr><td>FSB</td><td>Finansal İstikrar Kurulu (Financial Stability Board)</td></tr>
+  </table></div>
+  <div class="note exam">
+    <span class="label">Sunumun kapanış cümlesi</span>
+    <p>Küreselleşme finansal piyasaları <mark>daha etkin ve erişilebilir</mark>, ama aynı zamanda <mark>daha bağımlı</mark> hale getirmiştir. Piyasalar istikrarlı dönemlerde küresel büyümenin motoru, kriz dönemlerinde bulaşma kanalıdır.</p>
+  </div>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#u1"><small>Önceki</small>Sunum 1: Küresel ekonomi</a>
+    <a class="next" href="#u3"><small>Sıradaki</small>Sunum 3: Faiz, risk ve piyasa etkinliği</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u2">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u2">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= SUNUM 3 ================= -->
+<section class="view" id="u3" aria-label="Sunum 3">
+  <header class="u-head">
+    <div class="week">Sunum 3 · Hafta 3</div>
+    <h1>Faiz, risk ve piyasa etkinliği</h1>
+    <p class="lede">Dersin en hesaplamalı bölümü. Faizin ne olduğunu, neden değiştiğini, risk ve vadeye göre neden farklılaştığını ve piyasaların fiyatları ne kadar doğru belirlediğini öğrenirsin.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li>Dört kredi aracı: <mark>basit kredi, sabit ödemeli kredi, kuponlu tahvil, iskontolu tahvil</mark>. Fark nakit akışının zamanlamasındadır.</li>
+      <li>Karşılaştırma aracı: <mark>bugünkü değer (PV)</mark> ve <mark>vadeye kadar getiri (YTM)</mark>.</li>
+      <li><mark>Faiz oranları yükselince tahvil fiyatları düşer.</mark> Uzun vadeli tahvil daha çok kaybeder (<mark>faiz oranı riski</mark>).</li>
+      <li>Reel faiz = <mark class="num">nominal faiz − beklenen enflasyon</mark>.</li>
+      <li>Faiz üç şeyle değişir: <mark>enflasyon beklentisi, para politikası, ekonomik büyüme</mark>.</li>
+      <li>Risk yapısı: <mark>temerrüt riski, likidite, vergi</mark>. Vade yapısı: <mark>getiri eğrisi</mark>.</li>
+      <li><mark>Etkin Piyasalar Hipotezi (Fama, 1970)</mark> ve ona karşı <mark>davranışsal finans</mark>.</li>
+    </ul>
+  </div>
+
+  <h2>Dört tür kredi piyasası aracı</h2>
+  <p>Araçlar, borç alan ile borç veren arasındaki nakit akışının <em>ne zaman ve nasıl</em> gerçekleştiğine göre ayrılır<span class="src">s.3</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Araç</th><th>Nakit akışı</th><th>Örnek</th></tr>
+    <tr><td>Basit kredi</td><td>Anapara ve faiz <mark>vade sonunda tek seferde</mark> ödenir.</td><td>Kısa vadeli işletme kredisi</td></tr>
+    <tr><td>Sabit ödemeli kredi</td><td>Faiz ve anapara <mark>eşit taksitlerle</mark> ödenir (tam itfalı kredi).</td><td>Konut ve taşıt kredisi</td></tr>
+    <tr><td>Kuponlu tahvil</td><td>Düzenli sabit faiz (<mark>kupon</mark>) ödenir, vadede <mark>nominal değer</mark> geri ödenir.</td><td>Hazine ve şirket tahvilleri</td></tr>
+    <tr><td>İskontolu tahvil (sıfır kuponlu)</td><td><mark>Nominal değerin altında</mark> satılır; ara faiz yok, vadede nominal değer ödenir.</td><td>Hazine bonoları</td></tr>
+  </table></div>
+
+  <h3>Sayılarla dört araç</h3>
+  <div class="note calc">
+    <span class="label">Basit kredi: gelecekteki değer</span>
+    <span class="eq">FV = Anapara × (1 + i)<sup>n</sup></span>
+    <p>100 dolarlık kredi, %10 faiz: 1 yıl sonra <mark class="num">110</mark>, 2 yıl sonra <mark class="num">121</mark>, 3 yıl sonra <mark class="num">133</mark> dolar.</p>
+  </div>
+  <div class="note calc">
+    <span class="label">Sabit ödemeli kredi</span>
+    <p>1.000 dolar borç, 25 yıl boyunca yılda <mark class="num">126 dolar</mark> (faiz yaklaşık %12). Her ödeme hem faizi hem anaparanın bir kısmını kapsar.</p>
+  </div>
+  <div class="note calc">
+    <span class="label">Kuponlu tahvil</span>
+    <p>Nominal değer 1.000 dolar, 10 yıl boyunca yılda 100 dolar kupon, vadede 1.000 dolar. <mark>Kupon oranı = yıllık kupon ödemesi / nominal değer</mark> = 100 / 1.000 = <mark class="num">%10</mark>.</p>
+  </div>
+  <div class="note calc">
+    <span class="label">İskontolu tahvil</span>
+    <p>Bugün 900 dolara al, bir yıl sonra 1.000 dolar tahsil et. Kazanç 100 dolar, getiri 100 / 900 = <mark class="num">%11,1</mark>. Getirinin tamamı alış fiyatı ile nominal değer arasındaki farktan gelir.</p>
+  </div>
+
+  <h2>Bugünkü değer ve vadeye kadar getiri</h2>
+  <p>Hangi aracın daha çok kazandıracağını bu iki kavramla karşılaştırırız<span class="src">s.8–10</span>.</p>
+
+  <h3>Bugünkü değer (PV)</h3>
+  <p>Gelecekteki bir tutarın, belirli bir faiz (iskonto) oranıyla bugünkü karşılığı. Fikir: <mark>bugünkü bir dolar, gelecekteki bir dolardan daha değerlidir</mark>, çünkü bugünkü para faiz kazanabilir.</p>
+  <div class="note calc">
+    <span class="eq">PV = FV / (1 + i)<sup>n</sup></span>
+    <p>PV bugünkü değer, FV gelecekteki değer, i faiz (iskonto) oranı, n dönem sayısı. Örnek: %10 faizle bir yıl sonraki 110 doların bugünkü değeri 110 / 1,10 = <mark class="num">100 dolar</mark>.</p>
+  </div>
+
+  <h3>Vadeye kadar getiri (YTM)</h3>
+  <p>Bir borçlanma aracının tüm gelecek nakit akışlarının bugünkü değerini <mark>aracın bugünkü piyasa fiyatına eşitleyen faiz oranıdır</mark>. Aracı vadeye kadar elde tutarsan elde edeceğin gerçek ekonomik getiriyi gösterir.</p>
+  <div class="note calc">
+    <span class="label">Basit kredide YTM</span>
+    <p>Bugün 100 ver, bir yıl sonra 110 al: 100 = 110 / (1 + i), buradan i = <mark class="num">%10</mark>.</p>
+  </div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Faiz oranlarının <mark>en doğru ölçüsü vadeye kadar getiridir</mark> (tahvilin iç verim oranı). Değerleme: gelecekteki nakit akışlarının bugünkü değeri, faiz oranıyla bulunur.</p>
+  </div>
+
+  <h2>Faiz oranı ve getiri oranı aynı şey değil</h2>
+  <div class="pair">
+    <div><h4>Faiz oranı</h4><p>Tahvilin <mark class="trap">vaat ettiği</mark> orandır.</p></div>
+    <div><h4>Getiri oranı</h4><p>Yatırımcının <mark class="trap">fiilen kazandığı</mark> orandır.</p></div>
+  </div>
+  <p>Temel kural: <mark>piyasa faizleri yükselince tahvil fiyatları düşer</mark>.</p>
+  <div class="note example">
+    <span class="label">Örnek: 1.000 dolarlık tahvil, %10 kupon</span>
+    <p>Bir yıl sonra piyasa faizi %20'ye çıkıyor. Yeni 1.000 dolarlık tahvil yılda 200 dolar ödüyor. Kimse seninkine 1.000 dolar vermez, fiyatı düşer. Satarsan gerçek zarar edersin; tutarsan %10 kazanırsın ama başkaları %20 kazanır<span class="src">s.12</span>.</p>
+  </div>
+
+  <h3>Faiz oranı riski: vade uzadıkça kayıp büyür</h3>
+  <p>Aynı örnek, faiz %10'dan %20'ye çıkıyor<span class="src">s.13</span>. Yeni fiyat = kalan ödemelerin yeni faizle bugünkü değeri.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Tahvil</th><th>Hesap</th><th>Yeni fiyat</th></tr>
+    <tr><td>2 yıllık (1 yıl kaldı)</td><td>1.100 / 1,20</td><td><mark class="num">917 dolar</mark></td></tr>
+    <tr><td>30 yıllık (29 yıl kaldı)</td><td>29 yıl × 100 dolar + sonda 1.000, %20 ile iskonto</td><td><mark class="num">503 dolar</mark></td></tr>
+  </table></div>
+  <p>30 yıllık tahvilin getiri oranı: (100 + 503 − 1.000) / 1.000 = <mark class="num">−%39,7</mark>. Kupon %10'du ama yaklaşık %40 kayıp yaşandı. Buna <mark>faiz oranı riski</mark> denir.</p>
+  <div class="note plain">
+    <span class="label">Neden uzun tahvil daha çok düşer?</span>
+    <p>Düşük kupon yıllarca sabit kalır. Piyasada daha iyi faiz varken sen daha uzun süre düşük faize bağlısın. Bu yüzden fiyatın düşmesi gerekir.</p>
+  </div>
+
+  <h2>Nominal ve reel faiz</h2>
+  <p><mark>Nominal faiz</mark> enflasyonu hesaba katmayan ilan edilmiş orandır. <mark>Reel faiz</mark> beklenen fiyat değişimine göre düzeltilmiş gerçek borçlanma maliyetidir<span class="src">s.14</span>.</p>
+  <div class="note calc">
+    <span class="eq">Reel faiz = Nominal faiz − Beklenen enflasyon</span>
+  </div>
+  <div class="pair">
+    <div><h4>Ex ante (beklenen) reel faiz</h4><p><mark>Beklenen</mark> enflasyonla hesaplanır. Borçlanma, tasarruf ve yatırım kararlarını etkiler.</p></div>
+    <div><h4>Ex post (gerçekleşen) reel faiz</h4><p><mark>Gerçekleşen</mark> enflasyonla hesaplanır. Borç verenin gerçekte ne kadar kazandığını sonradan gösterir.</p></div>
+  </div>
+  <ul>
+    <li>Fiyatlar faizden hızlı artarsa paran artar ama <mark>alım gücü azalır</mark>.</li>
+    <li><mark>Reel faiz negatifse</mark> borç verenler kaybeder, borç alanlar kazanır (borcu değeri düşmüş parayla öder). Düşük reel faiz borçlanmayı özendirir, borç vermeyi caydırır.</li>
+  </ul>
+  <div class="note example">
+    <span class="label">Türkiye, 2021–2023</span>
+    <p>Kasım 2022'de politika faizi <mark class="num">%9</mark>, yıllık enflasyon yaklaşık <mark class="num">%84</mark>: reel faiz yaklaşık <mark class="num">−%75</mark>. Haziran 2023'ten sonra politika faizi sert artırıldı ve Mart 2024'te <mark class="num">%50</mark>'ye ulaştı<span class="src">s.16</span>.</p>
+  </div>
+
+  <h2>Negatif getiri ve negatif faiz</h2>
+  <p>Normalde YTM pozitiftir. Negatif getiri, tahvile vade sonunda geri alacağından <em>fazlasını</em> ödediğin anlamına gelir<span class="src">s.17–20</span>.</p>
+  <ul>
+    <li>İlk yaşayan: <mark class="num">Japonya 1998</mark>. Sonra ABD (2008 krizi), İsveç (2009), Danimarka (2012), Euro Bölgesi (2014), İsviçre (2014), yeniden Japonya (2016).</li>
+    <li>Ortaya çıktığı koşullar: <mark>kârlı yatırım fırsatı az</mark>, <mark>enflasyon çok düşük</mark>, <mark>merkez bankası negatif faiz uyguluyor</mark>.</li>
+  </ul>
+  <div class="note example">
+    <span class="label">Euro Bölgesi, 2014–2021</span>
+    <p>Banka Alman devletine 1.004 euro borç verir, bir yıl sonra 1.000 euro alır: 4 euro kaybeder. Neden kabul eder? Parasının bir kısmını güvenli varlıkta tutmak zorundadır, tamamını kredi veremez. Alternatif daha kötüdür: merkez bankası mevduata <mark class="num">−%0,5</mark> faiz uyguluyor. Banka daha küçük kaybı seçer.</p>
+  </div>
+  <div class="note plain">
+    <span class="label">Negatif politika faizi neden uygulanır?</span>
+    <p>Durgun ekonomide bankalar kredi vermek yerine parayı merkez bankasında tutar. Merkez bankası “burada tutarsan ücret ödersin” der. Amaç bankaları kredi vermeye yöneltmek, harcamayı artırmak, fiyatların düşmesini önlemek. Avrupa ve Japonya'daki merkez bankaları <mark class="num">2009–2024</mark> arasında uyguladı; bugün hiçbiri uygulamıyor.</p>
+  </div>
+
+  <h2>Faiz oranları neden değişir?</h2>
+  <p>Faiz, borç paranın fiyatıdır ve her fiyat gibi arz ve talebe bağlıdır. Üç etken fon arzını ve talebini değiştirir<span class="src">s.21</span>:</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Etken</th><th>Yön</th><th>Mantık</th></tr>
+    <tr>
+      <td>Enflasyon beklentisi</td>
+      <td>Beklenen enflasyon ↑ ⇒ faiz ↑</td>
+      <td>Borç veren alım gücü kaybını telafi etmek ister. <mark class="num">%2 reel getiri + %10 enflasyon ≈ %12 faiz</mark>. Bu ilişkiye <mark>Fisher etkisi</mark> denir.</td>
+    </tr>
+    <tr>
+      <td>Para politikası</td>
+      <td>Politika faizi ↑ ⇒ borçlanma pahalı</td>
+      <td>Fed, ECB, TCMB politika faizini ve açık piyasa işlemlerini kullanır. Enflasyonu kontrol için faiz artar; büyümeyi canlandırmak için indirilir.</td>
+    </tr>
+    <tr>
+      <td>Ekonomik büyüme</td>
+      <td>Güçlü büyüme ⇒ faiz ↑; zayıf büyüme ⇒ faiz ↓</td>
+      <td>Büyümede işletme ve tüketici daha çok borçlanır, kredi talebi artar. Resesyonda borçlanma azalır.</td>
+    </tr>
+  </table></div>
+
+  <h3>2008'den sonra faizler neden bu kadar düşüktü?</h3>
+  <p>ABD, Avrupa ve Japonya'da faizler çok düşük, zaman zaman negatifti. İki temel neden: <mark>düşük enflasyon</mark> ve <mark>zayıf büyüme</mark><span class="src">s.25–28</span>.</p>
+  <div class="chain" aria-label="Düşük enflasyonun tahvil piyasasına etkisi">
+    <span class="s">Düşük enflasyon</span><i>›</i><span>Gayrimenkul gibi reel varlıkların getirisi düşer, tahvil cazip olur: <b>talep ↑</b></span><i>›</i><span>Reel borç maliyeti (faiz − enflasyon) yükselir, firma ve devlet az borçlanır: <b>arz ↓</b></span><i>›</i><span class="s">Tahvil fiyatı ↑, faiz ↓</span>
+  </div>
+  <ul>
+    <li>Yavaş büyüme kârlı yatırım fırsatlarını azaltır, firmalar daha az borçlanır, tahvil arzı daha da düşer.</li>
+    <li>Not: <mark>düşük faiz sonuçtur, başlangıç noktası değildir</mark>. Sürekli düşük veya negatif faiz çoğu zaman ekonominin zorlandığını gösterir.</li>
+    <li><strong>Bugün:</strong> bu dönem <mark class="num">2022</mark>'de bitti. Enflasyon yükseldi, merkez bankaları sert artırdı. Fed politika faizi 2022 başında sıfıra yakınken <mark class="num">Temmuz 2023'te %5,25–5,50</mark> aralığına çıktı.</li>
+  </ul>
+
+  <h2>Risk yapısı: aynı vade, farklı faiz</h2>
+  <p>Aynı vadeli tahvillerin faizi üç nedenle farklılaşır<span class="src">s.29</span>: <mark>temerrüt riski, likidite, vergilendirme</mark>.</p>
+
+  <h3>Temerrüt riski ve risk primi</h3>
+  <p><mark>Temerrüt riski</mark>, ihraççının taahhüt ettiği faiz veya anapara ödemelerini yapamama olasılığıdır. Mali sıkıntıdaki şirket tahvilleri yüksek, ABD Hazine tahvilleri (devlet vergiyi artırabilir veya yeniden borçlanabilir) temerrüt riski taşımayan varlık sayılır.</p>
+  <div class="note exam">
+    <span class="label">Risk primi tanımı</span>
+    <p>Yatırımcıların <mark>güvenli bir borçlu yerine riskli bir borçluya borç verirken istediği ek faizdir</mark>. Borçlu bunu faizin bir parçası olarak öder. Esas kaynağı temerrüt riskidir; likidite de katkı yapar.</p>
+    <p>Örnek: güvenli Hazine tahvili %4, şirket tahvili %7 ⇒ risk primi <mark class="num">%7 − %4 = 3 yüzde puan</mark>. Aynı mantık ülkeler için de geçerlidir.</p>
+  </div>
+  <p>Temerrüt olasılığı arttığında risk primleri yükselir. Büyük Buhran'da (1930–33), 2008 krizinde ve Mart 2020'de Baa notlu tahvillerin risk primi sıçradı.</p>
+
+  <h3>CDS (kredi temerrüt takası)</h3>
+  <p><mark>Temerrüde karşı sigortadır.</mark> Fiyatı piyasanın borçluyu ne kadar riskli gördüğünü gösterir. <mark class="num">100 baz puan = %1</mark>.</p>
+  <div class="note example">
+    <span class="label">Türkiye CDS</span>
+    <p>Temmuz 2022: yaklaşık <mark class="num">900 baz puan</mark>, yani 100 dolarlık borcu sigortalamak yılda ~9 dolar. Eylül 2025: <mark class="num">240 baz puan</mark>, yılda ~2,40 dolar. Piyasa 2025'te Türkiye'yi 2022'ye göre çok daha az riskli görüyordu<span class="src">s.33</span>.</p>
+  </div>
+
+  <h3>Kredi notları</h3>
+  <p>Yatırımcı bir tahvilin riskini <mark>Moody's, Standard &amp; Poor's (S&amp;P) ve Fitch</mark> gibi kuruluşların notlarından öğrenir<span class="src">s.34–38</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <caption>Moody's notları</caption>
+    <tr><th>Not</th><th>Anlamı</th><th>Sınıf</th></tr>
+    <tr><td>Aaa</td><td>En yüksek kalite, en düşük risk</td><td rowspan="4"><mark>Yatırım yapılabilir düzey</mark> (Baa/BBB ve üzeri): düşük temerrüt riski</td></tr>
+    <tr><td>Aa</td><td>Yüksek kalite, çok düşük risk</td></tr>
+    <tr><td>A</td><td>Orta düzeyin üst dilimi, düşük risk</td></tr>
+    <tr><td>Baa</td><td>Orta düzeyde risk, spekülatif özellikler gösterebilir</td></tr>
+    <tr><td>Ba</td><td>Spekülatif unsurlar, önemli kredi riski</td><td rowspan="5"><mark>Spekülatif düzey</mark> (“çöp tahvil”): yüksek temerrüt riski, o yüzden yüksek getiri</td></tr>
+    <tr><td>B</td><td>Spekülatif, yüksek risk</td></tr>
+    <tr><td>Caa</td><td>Zayıf durum, çok yüksek risk</td></tr>
+    <tr><td>Ca</td><td>Son derece spekülatif, temerrüde yakın</td></tr>
+    <tr><td>C</td><td>En düşük sınıf, genellikle temerrütte</td></tr>
+  </table></div>
+  <ul>
+    <li>Notlar üç <mark>kademeye (notch)</mark> bölünür: Moody's'te Ba1, Ba2, Ba3; S&amp;P ve Fitch'te BB+, BB, BB−.</li>
+    <li>Yatırım yapılabilir düzeyin alt sınırı: <mark class="num">BBB− / Baa3</mark>.</li>
+    <li>Şirket tahvilleri Hazine tahvilinden daha yüksek faiz verir; içlerinde düşük notlunun (Baa) risk primi yüksek notludan (Aaa) fazladır.</li>
+  </ul>
+  <div class="note example">
+    <span class="label">Türkiye ve ABD notları</span>
+    <p>Türkiye devlet tahvilleri: S&amp;P ve Fitch'te <mark class="num">BB−</mark>, Moody's'te <mark class="num">Ba3</mark>. Bu spekülatif düzeydir ve yatırım yapılabilir düzeyin <mark class="num">üç basamak altındadır</mark>; bu yüzden Türkiye daha yüksek risk primi öder.</p>
+    <p>ABD: S&amp;P 2011'de AAA'dan AA+'ya, Fitch 2023'te AA+'ya, Moody's Mayıs 2025'te Aa1'e indirdi. Üç büyük kuruluşun hiçbiri artık AAA vermiyor.</p>
+  </div>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>Netflix 2016'da spekülatif düzeydeydi, sonra yatırım yapılabilir düzeye yükseltildi. Sears (2018), J.C. Penney (2020) ve Rite Aid (2023) sonradan iflas etti. Not sabit değildir.</p>
+  </div>
+
+  <h3>Likidite</h3>
+  <p>Varlığın <mark>ne kadar kolay ve düşük maliyetle nakde çevrilebildiği</mark>. ABD Hazine tahvilleri en likit uzun vadeli tahvillerdir; şirket tahvilleri daha az likittir. Tahvil az likit hale gelince talep düşer, fiyat düşer, faiz yükselir. Dolayısıyla şirket-Hazine faiz farkı <mark>hem temerrüt riskini hem likidite farkını</mark> yansıtır.</p>
+
+  <h3>Gelir vergisi etkisi</h3>
+  <p>ABD'de belediye tahvilleri daha riskli ve az likit olmalarına rağmen çoğu zaman Hazine tahvilinden <em>daha düşük</em> faiz öder, çünkü faiz geliri <mark>vergiden muaftır</mark><span class="src">s.41–42</span>.</p>
+  <div class="note calc">
+    <span class="label">%35 vergi diliminde</span>
+    <p>%10 ödeyen Hazine tahvili: vergiden sonra <mark class="num">%6,5</mark> kalır (10 × 0,65). %8 ödeyen vergiden muaf belediye tahvili: <mark class="num">%8</mark>'in tamamı kalır. İlan edilen faiz düşük ama vergi sonrası getiri yüksek.</p>
+  </div>
+
+  <h2>Vade yapısı ve getiri eğrisi</h2>
+  <p>Aynı riskteki tahvillerin faizinin vadeye göre değişimini gösterir. Dikey eksende getiri, yatay eksende vadeye kalan süre vardır<span class="src">s.43–44</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Şekil</th><th>Anlamı</th></tr>
+    <tr><td>Yukarı eğimli (normal)</td><td>Uzun vadeli faiz kısa vadeliden yüksek. <mark>En sık görülen şekil.</mark></td></tr>
+    <tr><td>Yatay</td><td>Kısa ve uzun vadeli faizler yaklaşık aynı.</td></tr>
+    <tr><td>Ters</td><td>Uzun vadeli faiz kısa vadeliden düşük. Piyasa <mark>kısa vadeli faizlerin düşeceğini</mark> bekliyor, çoğu zaman <mark>yavaşlama</mark> bekleniyor.</td></tr>
+  </table></div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Birçok ülkede <mark>ters getiri eğrisi sık sık resesyondan önce gelmiştir</mark>. Eğrinin şekli, piyasaların gelecek faiz, enflasyon ve büyüme beklentisini gösterir. Bu yüzden 12. haftada öncü gösterge olarak kullanılacak.</p>
+  </div>
+  <div class="note example">
+    <span class="label">Türkiye</span>
+    <p>2023 ortasından beri kısa vadeli faizler uzun vadelinin üzerinde; bu çok sıkı para politikasını ve enflasyon düştükçe beklenen faiz indirimini yansıtıyor. Slayta göre 2026'da politika faizi (%37) ile 10 yıllık getiri (yaklaşık %35) arasındaki fark çok daraldı.</p>
+  </div>
+
+  <h2>Finansal piyasalar etkin mi?</h2>
+  <h3>Etkin Piyasalar Hipotezi (EMH)</h3>
+  <p>Fiyatlar mevcut tüm bilgiyi tam ve anında yansıtıyorsa piyasa etkindir. Düşünceyi geliştiren: <mark>Eugene Fama (1970)</mark><span class="src">s.45</span>.</p>
+  <ul>
+    <li>Yeni bilgi çıkınca fiyatlar <mark>hızla uyum sağlar</mark>.</li>
+    <li>Tahmin veya piyasa zamanlamasıyla riske göre düzeltilmiş getiride <mark>sürekli ortalamanın üzerinde kazanç mümkün değildir</mark>.</li>
+    <li>Fiyatları yalnızca <mark>beklenmedik haberler</mark> hareket ettirir; beklenen olaylar zaten fiyatlanmıştır.</li>
+  </ul>
+  <p>Gerçek dünya kanıtı: piyasalar özellikle gelişmiş ekonomilerde <mark>büyük ölçüde etkin ama kusursuz değil</mark>.</p>
+  <div class="pair">
+    <div>
+      <h4>EMH'yi destekleyen</h4>
+      <p>Profesyonel yatırımcıların risk ve maliyetler hesaba katıldığında piyasayı sürekli yenmesi son derece zordur.</p>
+    </div>
+    <div>
+      <h4>EMH ile çelişen</h4>
+      <p>Kısa vadeli anomaliler: momentum, aşırı tepki, balonlar ve çöküşler. Psikolojik yanlılıklar, grup davranışı ve bilgi gecikmeleri geçici etkinsizlik yaratır.</p>
+    </div>
+  </div>
+
+  <h3>Davranışsal finans</h3>
+  <p>EMH yatırımcıların rasyonel olduğunu varsayar. Davranışsal finans, insan psikolojisinin <mark>sistematik hatalara</mark> yol açtığını gösterir<span class="src">s.47–48</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Yanlılık</th><th>Etkisi</th></tr>
+    <tr><td>Aşırı güven</td><td>Yatırımcı piyasayı sürekli yenebileceğine inanır.</td></tr>
+    <tr><td>Grup davranışı (sürü)</td><td>İnsanlar bilgiyi değil başkalarını izler; <mark>balonlar ve çöküşler</mark>.</td></tr>
+    <tr><td>Kayıptan kaçınma</td><td>Zarar eden yatırım gereğinden uzun tutulur, kazanan çok erken satılır.</td></tr>
+  </table></div>
+  <p>Örnek balonlar: <mark class="num">1990'ların sonundaki dot-com balonu</mark> ve <mark class="num">2000'lerdeki ABD konut balonu</mark>. Sonuç: piyasalar çoğu zaman etkindir, ama insan davranışı geçici etkinsizlik yaratır.</p>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#u2"><small>Önceki</small>Sunum 2: Küresel finansal piyasalar</a>
+    <a class="next" href="#u4"><small>Sıradaki</small>Sunum 4: Finansal kurumlar ve krizler</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u3">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u3">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= SUNUM 4 ================= -->
+<section class="view" id="u4" aria-label="Sunum 4">
+  <header class="u-head">
+    <div class="week">Sunum 4 · Hafta 4</div>
+    <h1>Finansal kurumlar ve krizler</h1>
+    <p class="lede">Doğrudan piyasadan borçlanmak yerine neden bankalara gidiyoruz? Cevap iki sorunda: işlem maliyeti ve asimetrik bilgi. Aynı iki sorun krizlerin de kaynağıdır.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li>Finansal kurumlar iki sorunu çözmek için vardır: <mark>yüksek işlem maliyetleri</mark> ve <mark>asimetrik bilgi</mark>.</li>
+      <li>Dünyada <mark>dolaylı finansman</mark> ve <mark>bankalar</mark> baskındır; hisse senedi dış finansmanın küçük bir kısmıdır.</li>
+      <li>Aracılar şu üç yolla işlem maliyetini düşürür: <mark>ölçek ekonomisi, uzmanlık ve teknoloji, likidite hizmetleri</mark>.</li>
+      <li><mark class="trap">Ters seçim</mark> işlemden <em>önce</em>, <mark class="trap">ahlaki tehlike</mark> işlemden <em>sonra</em> ortaya çıkar.</li>
+      <li>Finansal kriz, ters seçim ve ahlaki tehlike aniden kötüleşince, borç verenler <mark>kredi vermeyi durdurunca</mark> doğar.</li>
+      <li>Krizde <mark>kredi faiz farkı açılır</mark>; bu, Sunum 3'teki risk primidir.</li>
+    </ul>
+  </div>
+
+  <h2>Finansal kurumlar neden vardır?</h2>
+  <p>Sağlıklı bir ekonomi, fonları tasarruf sahiplerinden yatırımcılara etkin aktaran bir finansal sisteme dayanır. Sistem tasarrufları verimli yatırımlara yönlendirir; işletmeler büyür, ekonomi genişler<span class="src">s.3</span>.</p>
+  <p>Küresel sistemde bankalar, sigorta şirketleri, yatırım fonları ve finansal piyasalar vardır; hepsi devlet tarafından düzenlenir ve her yıl trilyonlarca dolar aktarılır.</p>
+
+  <h2>Finansal yapının sekiz temel olgusu</h2>
+  <p>Mishkin'e dayanan bu sekiz olguyu sayıları ve yönüyle bil<span class="src">s.5–8</span>. Her biri doğru/yanlış sorusuna dönüşebilir.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>#</th><th>Olgu</th><th>Ayrıntı</th></tr>
+    <tr><td>1</td><td>Hisse senetleri dış finansmanın ana kaynağı <mark class="trap">değildir</mark></td><td>ABD'de işletme finansmanının yaklaşık <mark class="num">%11</mark>'ini sağlar; diğer ülkelerde benzer.</td></tr>
+    <tr><td>2</td><td>Menkul kıymet ihracı ana finansman yöntemi <mark class="trap">değildir</mark></td><td>ABD'de bile hisse ve tahvil birlikte dış fonların <mark class="num">yarısından azını</mark> sağlar.</td></tr>
+    <tr><td>3</td><td>Dolaylı finansman doğrudan finansmandan <mark>daha önemlidir</mark></td><td>Çoğu finansman aracılar üzerinden gelir. ABD'de hanehalkına doğrudan menkul kıymet satışı <mark class="num">%10'dan azdır</mark>.</td></tr>
+    <tr><td>4</td><td>Finansal aracılar, özellikle <mark>bankalar</mark>, temel kaynaktır</td><td>Banka kredileri ABD'de dış finansmanın <mark class="num">yarısından fazlasını</mark>, Almanya ve Japonya'da <mark class="num">%70'ten fazlasını</mark> sağlar. Türkiye'de sistem bankalar hâkimdir; firmalar tahvil çıkarmak yerine bankadan borçlanır.</td></tr>
+    <tr><td>5</td><td>Finansal sistem <mark>sıkı düzenlenir</mark></td><td>Şeffaflık, risk azaltma ve istikrar için. Finans sektöründeki çöküş tüm ekonomiyi sarsar.</td></tr>
+    <tr><td>6</td><td>Menkul kıymet piyasalarına <mark>yalnızca büyük ve köklü şirketler</mark> kolay erişir</td><td>Küçük ve az tanınan firmalar bankalara dayanır.</td></tr>
+    <tr><td>7</td><td><mark>Teminat</mark> borç sözleşmelerinde yaygındır</td><td>Borç alan ödeyemezse borç vereni korur. Konut ve taşıt kredilerinde, işletme borçlanmasında.</td></tr>
+    <tr><td>8</td><td>Borç sözleşmeleri <mark>karmaşık ve kısıtlayıcıdır</mark></td><td>Kısıtlayıcı hükümler borç alanın davranışını sınırlar ve bazı koşullar ister (örneğin sigorta yaptırmak).</td></tr>
+  </table></div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Genel sezgiyle yanılabileceğin yer: borsa görünür ama <mark class="trap">firmaların ana finansman kaynağı hisse senedi değil, banka kredisidir</mark>.</p>
+  </div>
+
+  <h2>Aracılar işlem maliyetini nasıl düşürür?</h2>
+  <p><mark>İşlem maliyetleri</mark>: finansal varlık alım satımındaki giderler (aracılık ücreti, komisyon, asgari yatırım tutarı). Küçük yatırımcıyı piyasadan uzak tutabilir<span class="src">s.10</span>.</p>
+  <div class="note example">
+    <span class="label">İşlem maliyeti sorunu</span>
+    <p>5.000 doları olan küçük tasarruf sahibi, küçük alımlarda yatırım tutarına göre yüksek ücret öder. Birçok tahvil asgari tutar ister (örneğin 10.000 dolar). Yüksek maliyet çeşitlendirmeyi de sınırlar ve daha çok risk aldırır. Bugün internetten çok düşük ücretle, hatta kesirli hisse alınabiliyor; maliyetler düştü ama aracılar hâlâ önemli.</p>
+  </div>
+  <div class="tablewrap"><table class="t">
+    <caption>Aracıların üç çözümü</caption>
+    <tr><th>Çözüm</th><th>Nasıl</th></tr>
+    <tr><td>Ölçek ekonomileri</td><td>Fonları bir araya getirip büyük işlemleri <mark>dolar başına daha düşük maliyetle</mark> yapar. Örnek: yatırım fonları. Ayrıca çeşitlendirmeyle bireysel riski azaltır.</td></tr>
+    <tr><td>Uzmanlık ve teknoloji</td><td>Gelişmiş sistemler ve bilgi teknolojisi uzmanlığı; mobil bankacılık, çevrimiçi takip, anında transfer.</td></tr>
+    <tr><td>Likidite hizmetleri</td><td>Düşük maliyet sayesinde yatırımcının ihtiyaç duyduğunda paraya ulaşmasını kolaylaştırır. Örnek: <mark>para piyasası fonları</mark> faiz kazandırır, paranı genellikle bir gün içinde çekmene izin verir.</td></tr>
+  </table></div>
+
+  <h2>Asimetrik bilgi</h2>
+  <p>Taraflardan birinin diğerinden daha fazla veya daha iyi bilgiye sahip olması. Örnek: borç alan kendi projesini ve borcu ödeyip ödemeyeceğini bankadan çok daha iyi bilir<span class="src">s.13</span>. İki türü vardır ve <mark>zamanlama</mark> ayırt edicidir.</p>
+  <div class="pair">
+    <div>
+      <h4>Ters seçim (işlemden önce)</h4>
+      <p><mark>Kötü sonuç olasılığı en yüksek olanlar, işleme en istekli olanlardır.</mark> Yüksek riskli veya dürüst olmayan borç alanlar, ödeyemezlerse kaybedecekleri az olduğu için kredi arayışında en aktiftir.</p>
+      <p><strong>Etki:</strong> borç veren iyi-kötü borç alanı ayıramaz, iyi olsalar bile kredi vermeyi azaltır veya bırakır.</p>
+      <p><strong>Çözüm:</strong> bilgi toplamak (kredi geçmişi, gelir, mali tablo) ve <mark>teminat</mark> istemek. Türkiye örneği: <mark>Findeks</mark> kredi notu.</p>
+    </div>
+    <div>
+      <h4>Ahlaki tehlike (işlemden sonra)</h4>
+      <p><mark>Kredi verildikten sonra</mark> borç alanın, sonuçlara tam katlanmadığı için <mark>riski artıran davranışlarda</mark> bulunması. Kayıp esas olarak borç vereni etkileyeceği için riskli projeye yatırım yapar ya da parayı amacı dışında kullanır.</p>
+      <p><strong>Etki:</strong> temerrüt olasılığı artar, borç veren caydırılır.</p>
+      <p><strong>Çözüm:</strong> borç alanı <mark>izlemek</mark>, sözleşmeye <mark>kısıtlayıcı hükümler</mark> koymak, borç alanın <mark>kendi parasını (özkaynak)</mark> koymasını istemek.</p>
+    </div>
+  </div>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>“Önce” mi “sonra” mı? Banka krediyi vermeden önce kimin iyi olduğunu ayırt edemiyorsa <em>ters seçim</em>. Kredi verdikten sonra borç alan davranışını değiştiriyorsa <em>ahlaki tehlike</em>.</p>
+  </div>
+
+  <h3>Vekâlet teorisi</h3>
+  <p>Asimetrik bilginin finansal kararları ve ilişkileri nasıl etkilediğini inceleyen alan. Şunları açıklar<span class="src">s.16–17</span>:</p>
+  <ul>
+    <li>Finansal aracılar (bankalar) neden vardır: borç alanları eleyerek ve kredileri izleyerek bilgi sorununu azaltmak için.</li>
+    <li>Finansal sözleşmeler neden dikkatle hazırlanır ve izlenir.</li>
+    <li>Finansal krizler çoğu zaman ters seçim ve ahlaki tehlike yaygınlaşınca nasıl ortaya çıkar.</li>
+  </ul>
+  <div class="note plain">
+    <span class="label">Asil–vekil sorunu</span>
+    <p>Yöneticiler (<mark>vekil</mark>), firmanın sahibi olan hissedarların (<mark>asil</mark>) değil kendi çıkarlarına göre davranabilir.</p>
+  </div>
+
+  <h2>Finansal krizler</h2>
+  <p><mark>Finansal kriz</mark>, varlık fiyatlarında sert düşüş, yaygın firma iflası ve ekonomi genelinde güven çöküşüyle belirginleşen ciddi bozulmadır. Sistem düzgün çalışmayı bırakınca, fonlar tasarruf edenden verimli yatırımcıya akamaz ve ekonomi resesyona girer<span class="src">s.18</span>.</p>
+
+  <h3>Krizler neden ortaya çıkar?</h3>
+  <div class="chain" aria-label="Kriz mekanizması">
+    <span class="s">Şok<br>(fiyat düşüşü, belirsizlik, banka iflası)</span><i>›</i><span>Ters seçim ↑<br>Ahlaki tehlike ↑</span><i>›</i><span>Borç verenler kredi vermeyi durdurur</span><i>›</i><span>Varlık değerleri düşer</span><i>›</i><span class="s">Reel ekonomi daralır</span>
+  </div>
+  <p>Krizler nadir değildir; tarih boyunca tekrar yaşanmıştır. Slayttaki örnekler: <mark class="num">1929</mark> Büyük Buhran, <mark class="num">1997</mark> Asya krizi, <mark class="num">2001</mark> Türkiye krizi, <mark class="num">2008</mark> küresel kriz. Genelde şunlara yol açar: kredi daralması, varlık fiyatlarında düşüş, banka iflasları, ciddi ekonomik daralma.</p>
+
+  <h3>2007–2009 küresel finansal krizi</h3>
+  <ol class="timeline">
+    <li><span class="when">Ağustos 2007</span><span class="what">Başlangıç</span><p><mark>Subprime</mark> (kredi geçmişi zayıf kişilere verilen) konut kredilerindeki temerrütler küresel piyasalarda panik yarattı.</p></li>
+    <li><span class="when">2007–2009</span><span class="what">Yayılma</span><p>Büyük Buhran'dan beri en ağır finansal kriz. Finansal kurumlar yüzlerce milyar dolar zarar etti. Kredi piyasaları dondu. ABD hisseleri 2007 zirvesinden değerlerinin <mark class="num">yarısından fazlasını</mark> kaybetti.</p></li>
+    <li><span class="when">Eylül 2008</span><span class="what">Lehman Brothers</span><p>Büyük bankalar, yatırım şirketleri ve sigortacılar battı; yaygın korku doğdu.</p></li>
+    <li><span class="when">Aralık 2007 – Haziran 2009</span><span class="what">Büyük Resesyon</span><p>Ekonomi derin resesyona girdi; dönem daha sonra Büyük Resesyon olarak adlandırıldı.</p></li>
+  </ol>
+
+  <h3>Finansal sürtünmeler ve kredi faiz farkı</h3>
+  <p>Ters seçim ve ahlaki tehlikeye <mark>finansal sürtünmeler</mark> denir; borç verenin borç alanın ödeyip ödemeyeceğini değerlendirmesini zorlaştırır. Sonuçlar<span class="src">s.22</span>:</p>
+  <ul>
+    <li>Borç verenler temerrüde karşı korunmak için <mark>daha yüksek faiz ister</mark> ya da daha az kredi verir.</li>
+    <li><mark>Kredi faiz farkı açılır</mark>: riskli kredi faizleri ile ABD Hazine kâğıtları gibi güvenli varlıkların faizi arasındaki fark. Bu, 3. haftadaki <mark>risk primidir</mark>.</li>
+    <li>Faiz farkının açılması, finansal sistemde risk ve belirsizliğin arttığının işaretidir.</li>
+  </ul>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#u3"><small>Önceki</small>Sunum 3: Faiz, risk ve piyasa etkinliği</a>
+    <a class="next" href="#u5"><small>Sıradaki</small>Sunum 5: Bankalar ve merkez bankaları</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u4">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u4">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= SUNUM 5 ================= -->
+<section class="view" id="u5" aria-label="Sunum 5">
+  <header class="u-head">
+    <div class="week">Sunum 5 · Hafta 5</div>
+    <h1>Bankalar, merkez bankaları ve para politikası</h1>
+    <p class="lede">Merkez bankası faizi ve likiditeyi nasıl yönetir? Dört aracın her birinin rezervi, likiditeyi ve faizi hangi yönde oynattığını bilmek bu sunumun çekirdeğidir.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li>Banka: <mark>mevduat kabul eden ve kredi yaratan</mark> kurum; tasarruf edenle borç alan arasında aracılık yapar.</li>
+      <li>Dört banka türü: <mark>ticari, merkez, yatırım, kalkınma</mark>.</li>
+      <li>Merkez bankasının altı işlevi; en önemlisi <mark>para politikası</mark>, <mark>son başvuru mercii</mark> ve <mark>finansal istikrar</mark>.</li>
+      <li>Politika faizi: Fed'de <mark>federal funds hedef aralığı</mark>, TCMB'de <mark>bir haftalık repo faizi</mark>.</li>
+      <li>Dört araç: <mark>zorunlu karşılıklar, açık piyasa işlemleri, reeskont (iskonto) kredileri, rezervlere ödenen faiz</mark>.</li>
+      <li>Açık piyasa <mark>alımı</mark> ⇒ rezerv ↑, likidite ↑, kısa faiz ↓. <mark>Satımı</mark> ⇒ tersi.</li>
+      <li>Hedefler: fiyat istikrarı, yüksek istihdam, büyüme, finansal istikrar, faiz oynaklığını sınırlamak, kur istikrarı.</li>
+    </ul>
+  </div>
+
+  <h2>Bankalar</h2>
+  <p>Bankalar halktan mevduat kabul eder, kredi yaratır. Mevduat sahiplerinden topladığı fonları bireylere, işletmelere ve devletlere borç verir; böylece parası olanlardan paraya ihtiyacı olanlara aktarım yapar<span class="src">s.3</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <caption>Banka türleri</caption>
+    <tr><th>Tür</th><th>Ne yapar</th><th>Örnek</th></tr>
+    <tr><td>Ticari banka</td><td>Birey ve işletmelerden mevduat alır; kredi, kredi kartı ve diğer hizmetleri sunar.</td><td>İşbank, Citibank</td></tr>
+    <tr><td>Merkez bankası</td><td>Ülkenin para arzını, faizini ve finansal istikrarını yöneten <mark>kamu kurumu</mark>.</td><td>TCMB, Fed, ECB</td></tr>
+    <tr><td>Yatırım bankası</td><td>Şirketlerin hisse ve tahvil ihraç ederek <mark>sermaye toplamasına</mark> yardım eder; birleşme ve satın almada danışmanlık verir.</td><td>Goldman Sachs, Morgan Stanley</td></tr>
+    <tr><td>Kalkınma bankası</td><td>Ekonomik kalkınmayı ve altyapıyı destekleyen projelere <mark>uzun vadeli finansman</mark> sağlar.</td><td>Türkiye Kalkınma ve Yatırım Bankası; Dünya Bankası, Asya Kalkınma Bankası</td></tr>
+  </table></div>
+
+  <h2>Merkez bankaları</h2>
+  <p>Para politikasını yöneten kamu otoriteleridir; faiz, kredi ve para arzını etkilerler. İki yolla etki ederler: <mark>dolaşımdaki para miktarını kontrol ederek</mark> ve <mark>politika faizlerini belirleyerek</mark><span class="src">s.6</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Soru</th><th>TCMB</th><th>Fed</th></tr>
+    <tr><td>Yöneticileri kim atar?</td><td>Başkanı <mark>Cumhurbaşkanı</mark> atar.</td><td>ABD Başkanı aday gösterir, <mark>Senato onaylar</mark>.</td></tr>
+    <tr><td>Faiz kararını kim verir?</td><td><mark>Para Politikası Kurulu (PPK)</mark></td><td><mark>FOMC</mark></td></tr>
+    <tr><td>Yasal görev</td><td>Öncelik <mark>fiyat istikrarı</mark></td><td><mark>Fiyat istikrarı ve istihdam</mark></td></tr>
+    <tr><td>Enflasyon hedefi</td><td>Orta vadede <mark class="num">%5</mark></td><td>Uzun vadede <mark class="num">%2</mark> (PCE endeksi)</td></tr>
+    <tr><td>Politika faizi</td><td><mark>Bir hafta vadeli repo faizi</mark></td><td><mark>Federal funds hedef aralığı</mark></td></tr>
+  </table></div>
+  <p>Faiz yoluyla etkisi: <mark>yüksek faiz</mark> borçlanmayı pahalılaştırır, kişi ve firmalar daha az harcar ve yatırım yapar, zamanla enflasyon düşer. <mark>Düşük faiz</mark> tersini yapar ve büyümeyi destekler.</p>
+
+  <h3>Merkez bankasının altı işlevi</h3>
+  <div class="tablewrap"><table class="t">
+    <tr><th>İşlev</th><th>İçeriği ve örnek</th></tr>
+    <tr><td>Para politikasını uygulamak</td><td>Enflasyonu kontrol etmek ve büyümeyi desteklemek için para arzı ve faiz. TCMB esas olarak bir haftalık repo faiziyle.</td></tr>
+    <tr><td>Son başvuru mercii</td><td>Geçici likidite sıkıntısı yaşayan, ödeme gücü yerinde bankalara acil likidite. Örnek: 2008 krizi ve Mart 2020'de bankalara büyük miktarlı borç.</td></tr>
+    <tr><td>Finansal istikrar</td><td>Riskleri belirlemek ve kriz olasılığını azaltmak için sistemi izler. Türkiye'de bankaları <mark>BDDK</mark> denetler; TCMB tüm sistemi izler ve <mark>Finansal İstikrar Raporu</mark> yayımlar.</td></tr>
+    <tr><td>Para basma</td><td>Banknot basma yetkisi <mark>yalnızca merkez bankasındadır</mark>.</td></tr>
+    <tr><td>Döviz rezervlerinin yönetimi</td><td>Dış likiditeyi ve finansal istikrarı desteklemek için döviz ve altın rezervlerini tutar. Örnek: Mart 2025'te TCMB oynaklığı sınırlamak için TL ve döviz likiditesine yönelik tedbirler aldı.</td></tr>
+    <tr><td>Hükümetin bankası</td><td>Ne kadar borçlanılacağına <mark>Hazine</mark> karar verir. Merkez bankası aracıdır: Hazine'nin hesabını tutar, devlet tahvili ve hazine bonosu ihalelerini yürütür, kupon ve anapara ödemelerini yapar.</td></tr>
+  </table></div>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>Bankaları Türkiye'de <mark class="trap">BDDK denetler</mark>, merkez bankası değil. TCMB ise tüm sistemi izler. Hazine borçlanma kararını verir, TCMB sadece aracıdır.</p>
+  </div>
+
+  <h2>Para politikası</h2>
+  <p>Faiz oranlarını, ekonomik faaliyeti ve genel refahı etkilediği için önemlidir. Merkez bankaları faizi etkilemek için bankacılık sistemindeki <mark>likiditeyi</mark> yönetir<span class="src">s.10</span>.</p>
+  <div class="pair">
+    <div>
+      <h4>Daraltıcı politika</h4>
+      <p>Talebi sınırlamak ve enflasyon baskısını azaltmak için politika faizini <mark>artırır</mark>.</p>
+    </div>
+    <div>
+      <h4>Genişletici politika</h4>
+      <p>Talebi canlandırmak ve ekonomik faaliyeti desteklemek için politika faizini <mark>düşürür</mark>.</p>
+    </div>
+  </div>
+
+  <h2>Para politikasının dört aracı</h2>
+  <p>Araçlar <mark>bankacılık sistemindeki rezerv miktarını</mark> veya rezerv tutmanın getirisini etkiler. Rezerv = bankaların merkez bankasındaki mevduatı + kasalarındaki nakit. Bankalar için varlık, merkez bankası için yükümlülüktür. Toplam rezerv = <mark>zorunlu rezerv + serbest rezerv</mark><span class="src">s.11–13</span>.</p>
+
+  <h3>1. Zorunlu karşılıklar</h3>
+  <p>Bankaların merkez bankasında rezerv olarak tutmak zorunda olduğu <mark>mevduat yüzdesi</mark>.</p>
+  <ul>
+    <li><mark>Düşürülürse</mark>: likidite gevşer, kredi teşvik edilir, para arzı artabilir.</li>
+    <li><mark>Yükseltilirse</mark>: likidite sıkılaşır, kredi sınırlanır, para arzı daralabilir.</li>
+    <li>Ülkeler farklı kullanır: <mark>Fed artık kullanmıyor</mark>, Mart 2020'den beri ABD'de bankalar zorunlu karşılık tutmuyor. <mark>TCMB hâlâ kullanıyor</mark>; örneğin dolar ve euro mevduatı için TL mevduatından daha yüksek karşılık ister. Döviz mevduatı bankaya daha az kârlı olur, banka daha düşük faiz verir. Amaç insanları <mark>TL ile tasarrufa</mark> teşvik etmek.</li>
+  </ul>
+
+  <h3>2. Açık piyasa işlemleri</h3>
+  <p>Devlet menkul kıymetlerinin doğrudan alım-satımı ya da geri alım anlaşmalarıyla (repo) alınıp satılması<span class="src">s.14–16</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>İşlem</th><th>Bankanın rezervi</th><th>Likidite</th><th>Kısa vadeli faiz</th></tr>
+    <tr><td>Merkez bankası menkul kıymet <mark>alır</mark> (açık piyasa alımı)</td><td>↑ (bedeli bankaların hesabına yatırır)</td><td>↑</td><td>↓</td></tr>
+    <tr><td>Merkez bankası menkul kıymet <mark>satar</mark> (açık piyasa satışı)</td><td>↓ (bankalar rezervle öder)</td><td>↓</td><td>↑</td></tr>
+  </table></div>
+  <div class="note calc">
+    <span class="label">100 milyon dolarlık alım</span>
+    <p>Merkez bankasının varlıkları (menkul kıymet) ve yükümlülükleri (rezerv) <mark class="num">100 milyon dolar</mark> artar. Bankacılık sisteminin toplam varlığı değişmez ama rezervi artar, likidite yükselir, daha çok kredi verilebilir.</p>
+  </div>
+  <p>Türkiye'de politika faizini PPK belirler: <mark>1 haftalık repo ihale faizi</mark>. TCMB bu ihalelerle bankalara uygun teminat karşılığında bir haftalığına fon verir.</p>
+
+  <h3>3. Reeskont (iskonto) kredileri</h3>
+  <p>Merkez bankası bankalara doğrudan kısa vadeli likidite sağlar. ABD'de bu kredilere uygulanan faiz <mark>iskonto oranı</mark>dır<span class="src">s.17–19</span>.</p>
+  <ul>
+    <li>İskonto oranı <mark>düşürülürse</mark> bankalar daha çok borçlanır ⇒ rezerv ve likidite artar. Artırılırsa borçlanma caydırılır ⇒ likidite azalır.</li>
+    <li>Merkez bankası bankaya 100 milyon dolar kredi verirse bankanın rezervi (varlık) ve merkez bankasına borcu (yükümlülük) artar. Merkez bankasının bilançosunda kredi varlıkta, rezerv yükümlülükte artar. Banka geri ödeyince rezerv azalır.</li>
+    <li><strong>Neden “iskonto”?</strong> Tarihte merkez bankaları poliçe ve bono gibi ticari senetleri vadesinden önce değerinin altında yeniden iskonto ederek fon sağlardı. Bugün Fed iskonto penceresinde <mark>teminat karşılığı</mark> kredi verir; devlet menkul kıymetleri teminat olabilir.</li>
+    <li><strong>Türkiye:</strong> bankalar <mark>gecelik borç verme faiziyle</mark> gecelik borç alabilir. Bu faiz TCMB'nin <mark>faiz koridorunun üst sınırıdır</mark> ve kısa vadeli piyasa faizlerinin aşırı yükselmesini sınırlar. TCMB ayrıca ihracatı desteklemek için reeskont kredisi verir.</li>
+  </ul>
+
+  <h3>4. Rezervlere ödenen faiz</h3>
+  <p>Merkez bankasının bankaların kendinde tuttuğu rezervlere ödediği faiz<span class="src">s.20</span>.</p>
+  <ul>
+    <li>Artırılırsa rezerv tutmak cazip olur ⇒ kısa vadeli piyasa faizlerine <mark>yukarı yönlü baskı</mark>. Düşürülürse aşağı yönlü baskı.</li>
+    <li>Kısa vadeli faizler için <mark>taban</mark> oluşturur: banka, merkez bankasından kazanacağından düşük faizle borç vermez.</li>
+    <li>Fed bu aracı <mark class="num">2008'den beri</mark> kullanıyor; kısa vadeli faizleri kontrol için temel araçtır. Türkiye'de benzer işlevi TCMB'nin <mark>gecelik borçlanma faizi</mark> görür; bankalar fazla fonlarını gecelik TCMB'ye yatırıp bu faizi kazanır.</li>
+  </ul>
+  <div class="note plain">
+    <span class="label">Faiz koridoru: üst ve alt sınır</span>
+    <p>Türkiye'de piyasa faizi iki sınır arasında kalır. <strong>Üst sınır:</strong> gecelik borç verme faizi (banka açık verirse bundan fazlasını ödemez). <strong>Alt sınır:</strong> gecelik borçlanma faizi (banka fazla parasını bundan daha ucuza vermez).</p>
+  </div>
+  <div class="tablewrap"><table class="t">
+    <caption>Dört aracın özeti</caption>
+    <tr><th>Araç</th><th>Gevşetici hareket</th><th>Sıkılaştırıcı hareket</th></tr>
+    <tr><td>Zorunlu karşılık</td><td>Oranı düşür</td><td>Oranı yükselt</td></tr>
+    <tr><td>Açık piyasa</td><td>Menkul kıymet <mark>al</mark></td><td>Menkul kıymet <mark>sat</mark></td></tr>
+    <tr><td>Reeskont / iskonto kredisi</td><td>İskonto oranını düşür</td><td>İskonto oranını yükselt</td></tr>
+    <tr><td>Rezervlere faiz</td><td>Faizi düşür</td><td>Faizi yükselt</td></tr>
+  </table></div>
+
+  <h2>Para politikasının hedefleri</h2>
+  <p>Hedefler ve öncelikleri merkez bankalarının yasal görevlerine ve çerçevelerine göre ülkeden ülkeye değişir<span class="src">s.21–26</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Hedef</th><th>Ne demek</th></tr>
+    <tr><td>Fiyat istikrarı</td><td>Çoğu merkez bankasının temel hedefi: <mark>enflasyonu düşük ve istikrarlı tutmak, deflasyondan kaçınmak</mark>. Birçoğu bir enflasyon hedefi belirler.</td></tr>
+    <tr><td>Yüksek istihdam</td><td>Fiyat istikrarıyla uyumlu <mark>sürdürülebilir en yüksek istihdam</mark>. <mark class="trap">Sıfır işsizlik demek değildir.</mark></td></tr>
+    <tr><td>Ekonomik büyüme</td><td>Faiz ve kredi koşullarını etkileyerek faaliyeti istikrara kavuşturmak. Düşük faiz kısa vadede yatırımı ve tüketimi teşvik eder.</td></tr>
+    <tr><td>Finansal piyasa istikrarı</td><td>Kriz riskini azaltmak ve bankacılığa güveni korumak; stres dönemlerinde likidite sağlamak.</td></tr>
+    <tr><td>Faizde aşırı oynaklığı sınırlamak</td><td>Yatırım ve harcamadaki belirsizliği azaltır.</td></tr>
+    <tr><td>Döviz piyasasında istikrar</td><td>Güçlü yerli para ihracatın rekabet gücünü azaltabilir; zayıf para ithalat fiyatlarını artırıp enflasyonu körükleyebilir. Hedef <mark class="trap">belirli bir kur seviyesini hedeflemek değil</mark>, aşırı oynaklığı sınırlamaktır.</td></tr>
+  </table></div>
+  <div class="note exam">
+    <span class="label">Sınavda çıkar</span>
+    <p>Fed'in çifte görevi (<mark>fiyat istikrarı + istihdam</mark>) ile TCMB'nin tek önceliğini (<mark>fiyat istikrarı</mark>) ayırt et. Hedef rakamları: Fed %2 (PCE), TCMB orta vadede %5.</p>
+  </div>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#u4"><small>Önceki</small>Sunum 4: Finansal kurumlar ve krizler</a>
+    <a class="next" href="#u6"><small>Sıradaki</small>Sunum 6: Para piyasaları</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u5">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u5">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= SUNUM 6 ================= -->
+<section class="view" id="u6" aria-label="Sunum 6">
+  <header class="u-head">
+    <div class="week">Sunum 6 · Hafta 6</div>
+    <h1>Para piyasaları</h1>
+    <p class="lede">Adı yanıltıcı: burada nakit alınıp satılmaz. İşlem gören şey paraya çok yakın, kısa vadeli ve güvenli borç araçlarıdır.</p>
+  </header>
+
+  <div class="glance">
+    <h2>Tek bakışta</h2>
+    <ul>
+      <li>Üç özellik: <mark>büyük kupürler</mark> (genellikle 1 milyon dolar ve üzeri), <mark>düşük temerrüt riski</mark>, <mark>kısa vade</mark> (genellikle bir yıldan kısa, çoğu zaman 120 günden kısa).</li>
+      <li>Elektronik ortamda işler, aktif ikincil piyasası vardır.</li>
+      <li>İki amaç: fazla fonlara <mark>geçici park yeri</mark> ve ihtiyaç sahiplerine <mark>düşük maliyetli kısa vadeli borç</mark>.</li>
+      <li>Yedi araç: <mark>hazine bonosu, federal funds, repo, devredilebilir mevduat sertifikası, finansman bonosu, banka kabullü poliçe, eurodolar</mark>.</li>
+      <li>Bireyler piyasaya <mark>para piyasası fonları (MMMF)</mark> yoluyla dolaylı katılır.</li>
+      <li>Hazine bonosu, finansman bonosu ve banka kabullü poliçe <mark>iskontolu</mark> satılır.</li>
+    </ul>
+  </div>
+
+  <h2>Tanım</h2>
+  <p>“Para piyasası” terimi yanıltıcıdır, çünkü orada gerçek para (nakit) alınıp satılmaz. İşlem gören, paraya çok yakın ikameler olan <mark>kısa vadeli ve likiditesi yüksek borç araçlarıdır</mark><span class="src">s.3</span>.</p>
+  <div class="tablewrap"><table class="t">
+    <caption>Üç temel özellik</caption>
+    <tr><th>Özellik</th><th>Anlamı</th></tr>
+    <tr><td>Büyük nominal değer</td><td>Kupür, finansal aracın üzerinde yazan tutar. Genellikle <mark class="num">1 milyon dolar veya daha büyük</mark> birimlerle satılır.</td></tr>
+    <tr><td>Düşük temerrüt riski</td><td>Güvenli ve sağlam yatırımlar sayılır.</td></tr>
+    <tr><td>Kısa vade</td><td>Genellikle <mark class="num">bir yıldan kısa</mark>, çoğu zaman <mark class="num">120 günden kısa</mark>.</td></tr>
+  </table></div>
+  <ul>
+    <li>Fiziksel mekânda değil <mark>elektronik ortamda</mark> işler; işlemciler telefon veya bilgisayarla işlem yapar.</li>
+    <li><mark>Aktif ikincil piyasası</mark> vardır: araçlar vadeden önce kolayca alınıp satılır.</li>
+    <li>Büyük ölçeklidir; esas olarak şirketlere, devletlere ve finansal kuruluşlara hizmet eder. Küçük yatırımcı dolaylı katılır: <mark>para piyasası fonu</mark> çok sayıda küçük yatırımcıdan para toplar ve büyük tutarlı, düşük riskli, kısa vadeli menkul kıymetlere yatırır.</li>
+  </ul>
+
+  <h2>Para piyasalarının amacı</h2>
+  <div class="pair">
+    <div><h4>Fazla fonu olanlar için</h4><p>Firmalara, finansal kuruluşlara ve devletlere fazla fonlarını <mark>geçici olarak değerlendirecek</mark> yer verir.</p></div>
+    <div><h4>Likiditeye ihtiyacı olanlar için</h4><p><mark>Düşük maliyetli kısa vadeli borçlanma</mark> kaynağı sunar.</p></div>
+  </div>
+  <ul>
+    <li>Araçlar kısa vadeli, güvenli ve kolay satılabilir olduğu için yatırımcıya fonlarını <mark>“depolama”</mark> imkânı verir: daha iyi fırsat çıkana kadar geçici tutmak.</li>
+    <li>Yatırımcılar yüksek getiri değil, <mark>güvenlik, likidite ve makul faiz</mark> ister. Beklenen: atıl nakdin veya banka mevduatının getirisinden yüksek olması.</li>
+    <li>Atıl nakdin <mark>fırsat maliyeti</mark> vardır, çünkü hiç gelir getirmez. Fazla fonu para piyasasına yatırmak bunu azaltır.</li>
+    <li>Borçlanma tarafı: ABD hükümeti kısa vadeli bütçe ihtiyacı için hazine bonosu çıkarır; bankalar geçici likidite (ve Türkiye gibi ülkelerde zorunlu karşılık) ihtiyacı için borçlanır; Ally Financial gibi şirketler taşıt kredisi gibi faaliyetlerini finanse etmek için kısa vadeli borç senedi çıkarır.</li>
+  </ul>
+
+  <h2>Katılımcılar</h2>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Katılımcı</th><th>Rolü</th></tr>
+    <tr><td>ABD Hazinesi</td><td>Küresel para piyasalarında <mark>en büyük borçlanıcı</mark>. Vergi gelirleri toplanana kadar faaliyeti finanse etmek veya vadesi gelen borcu yenilemek için hazine bonosu ve diğer kısa vadeli menkul kıymet çıkarır.</td></tr>
+    <tr><td>Federal Rezerv</td><td>Para piyasasının <mark>en etkili katılımcısı</mark>. Para politikasını uygulamak için Hazine menkul kıymeti alıp satar: alım likiditeyi artırır, faizi düşürür; satım likiditeyi azaltır, faizi yükseltir.</td></tr>
+    <tr><td>Ticari bankalar</td><td><mark>İkili rol</mark>: hem borç alır (CD, banka kabullü poliçe, federal funds, repo) hem borç verir. İşletmelere kısa vadeli kredi verir. Hazine menkul kıymetlerinin büyük sahibidir. Büyük bankalar (money center bank: Citigroup, Bank of America, J.P. Morgan, Wells Fargo) hem kendi hesaplarına hem müşterileri adına işlem yapar.</td></tr>
+    <tr><td>İşletmeler</td><td>Hem borç alan hem borç veren. Fazla fonlarını kısa vadeli araçlara yatırır, geçici ihtiyaç için kısa vadeli borçlanır.</td></tr>
+    <tr><td>Yatırım şirketleri</td><td>BofA Securities, Barclays, Goldman Sachs gibi aracı kurumlar <mark>piyasa yapıcı</mark> olarak çalışır: elinde menkul kıymet stoku tutar, satmak isteyenden alır, almak isteyene satar. Likiditeyi artırır.</td></tr>
+    <tr><td>Finansman şirketleri</td><td>Finansman bonosu çıkararak kısa vadeli borçlanır, parayı oto, tekne, ev tadilatı gibi dayanıklı tüketim için kredi olarak verir.</td></tr>
+    <tr><td>Sigorta şirketleri</td><td>Mal ve kaza sigortacıları beklenmedik büyük tazminat talepleri için likidite olarak tutar. Örnek: doğal afet sonrası bunları satıp tazminat öder.</td></tr>
+    <tr><td>Emeklilik fonları</td><td>Varlıklarının bir kısmını likidite ve kısa vadeli fırsatlar için yatırır.</td></tr>
+    <tr><td>Bireyler</td><td>Esas olarak <mark>para piyasası fonları (MMMF)</mark> aracılığıyla.</td></tr>
+  </table></div>
+  <div class="note plain">
+    <span class="label">MMMF'ler neden doğdu?</span>
+    <p>1970'lerin sonunda enflasyon piyasa faizlerini yükseltince, para piyasası fonları geleneksel banka mevduatından daha yüksek getiri sağladığı için cazip oldu. Küçük yatırımcıların fonlarını havuzlayıp büyük kupürlü menkul kıymetlere erişmesini sağlar; likidite, güvenlik ve daha yüksek getiriyi bir araya getirir. Bankalar sonradan mevduat faizlerini artırsa da fonlar bugün de popülerdir.</p>
+  </div>
+  <p>Not: <mark>2008'den beri Fed faizleri esas olarak rezervlere ödediği faizle yönetiyor</mark> (Sunum 5'teki dördüncü araç).</p>
+
+  <h2>Yedi para piyasası aracı</h2>
+
+  <h3>1. Hazine bonoları (T-bill)</h3>
+  <p>ABD hükümetinin kısa vadeli menkul kıymetleri; <mark>iskontolu satılır, vadede nominal değerinden itfa edilir</mark>. Vadeleri <mark class="num">4, 6, 8, 13, 17, 26 ve 52 hafta</mark>dır. Para piyasasının en likit ve en yaygın alınıp satılan aracıdır<span class="src">s.21–22, 39</span>.</p>
+  <div class="note calc">
+    <span class="label">26 haftalık 10.000 dolarlık bono</span>
+    <p>Fiyat 9.800 dolar. Altı ay sonra devlet 10.000 dolar öder. Kazanç <mark class="num">200 dolar</mark>; altı aylık getiri 200 / 9.800 ≈ <mark class="num">%2,04</mark>.</p>
+  </div>
+  <p>Türkiye'de de hazine bonosu ihalesi yapılır (slaytta Temmuz 2026 ihale duyurusu örnek verilmiş).</p>
+
+  <h3>2. Bankalar arası gecelik borç (federal funds)</h3>
+  <p>Rezervlerin bankalar ve diğer finansal kuruluşlar arasında <mark>gecelik</mark> borç verilmesi. ABD'deki her ticari banka Fed'de rezerv tutar; birinin rezervi ihtiyacın altına inerken diğerinin fazlası olabilir. Bunlara uygulanan faize <mark>federal funds faizi</mark> denir<span class="src">s.23–25</span>.</p>
+  <div class="note example">
+    <span class="label">Örnek</span>
+    <p>A Bankasının fazla rezervi var, B Bankasının açığı var. A, B'ye 10 milyon doları bir gecelik verir. Ertesi sabah B parayı faiziyle geri öder; yıllık %5 ise bir günlük faiz bu orana göre hesaplanır.</p>
+  </div>
+  <p><strong>Türkiye karşılığı:</strong> bankalar birbirine gecelik TL'yi çoğunlukla <mark>Borsa İstanbul'da, devlet tahvili teminatlı repo ile</mark> verir. Bu kredilerin ortalama faizi <mark>TLREF</mark>'tir.</p>
+
+  <h3>3. Geri alım anlaşmaları (repo)</h3>
+  <p>Menkul kıymetlerin satılıp daha sonra <mark>belirli bir fiyattan geri alındığı</mark> kısa vadeli kredi (genellikle iki haftadan kısa, çoğu zaman gecelik). <mark>Teminatlı kredi gibi</mark> işler. Satış fiyatı ile geri alım fiyatı arasındaki fark kredinin faizidir<span class="src">s.26–27</span>.</p>
+  <div class="note calc">
+    <span class="label">10 milyon TL'lik gecelik repo</span>
+    <p>Banka bugün 10 milyon TL değerinde devlet tahvilini satar, ertesi gün <mark class="num">10,01 milyon TL</mark>'ye geri almayı kabul eder. Fark <mark class="num">10.000 TL</mark> faiz maliyetidir (günlük %0,1).</p>
+  </div>
+  <p>TCMB repo ihaleleriyle bankalara bir haftalığına TL borç verir; teminat devlet tahvili, faiz TCMB'nin politika faizidir (Sunum 5).</p>
+
+  <h3>4. Devredilebilir mevduat sertifikaları (CD)</h3>
+  <p>Ticari bankanın çıkardığı, <mark>vadesi belli, faiz getiren, kısa vadeli büyük tutarlı vadeli mevduat</mark>. <mark>Devredilebilir</mark> demek: vadeden önce ikincil piyasada satılabilir; vadede anapara ve faiz, sertifika o tarihte kimdeyse ona ödenir<span class="src">s.28–29</span>.</p>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>Bireylerin açtığı normal vadeli mevduat başkasına <mark class="trap">satılamaz</mark> ve vadeden önce bozdurulursa genellikle faiz kaybı olur. Ayrım, “devredilebilir” kelimesindedir. Türkiye'de CD bugün kullanılmıyor; bankalar yerine <mark>banka bonosu</mark> çıkarıyor.</p>
+  </div>
+  <div class="note calc">
+    <span class="label">Wells Fargo CD</span>
+    <p>1.000.000 dolar, yıllık %5, 3 ay. Faiz = 1.000.000 × 0,05 × 3/12 = <mark class="num">12.500</mark>. Şirket 3 ay sonra <mark class="num">1.012.500 dolar</mark> alır. Daha erken paraya ihtiyaç duyarsa CD'yi ikincil piyasada satar.</p>
+  </div>
+
+  <h3>5. Finansman bonosu (commercial paper)</h3>
+  <p>Büyük ve kredibilitesi yüksek şirketlerin kısa vadeli fon ihtiyacı (stok, maaş, acil gider) için çıkardığı <mark>teminatsız</mark>, kısa vadeli borç senedi. ABD'de vade genellikle <mark class="num">270 günden kısa</mark>. Çok güvenli sayılır, çünkü teminat vermeden yalnızca kredibilitesi çok yüksek şirketler çıkarabilir<span class="src">s.30–31</span>.</p>
+  <div class="note calc">
+    <span class="label">Apple örneği</span>
+    <p>Nominal 100 milyon dolar, vade 90 gün, iskontolu fiyat 98,5 milyon dolar. Yatırımcı 98,5 öder, 90 gün sonra 100 alır: faiz <mark class="num">1,5 milyon dolar</mark>, 90 günlük getiri 1,5 / 98,5 ≈ %1,52.</p>
+  </div>
+  <p>Türkiye'de Anadolu Isuzu ve Vestel gibi şirketler çoğunlukla nitelikli yatırımcılara finansman bonosu çıkarır.</p>
+
+  <h3>6. Banka kabullü poliçe (banker's acceptance, BA)</h3>
+  <p>Bankanın garanti ettiği, belirli tutarın ileri bir tarihte ödenmesine ilişkin yazılı ödeme emri. <mark>Dış ticarette ödemeyi garanti etmek</mark> için kullanılır. Düşük riskli, alınıp satılabilen ve <mark>iskontolu</mark> satılan araçtır<span class="src">s.32–35</span>.</p>
+  <div class="note example">
+    <span class="label">Builtwell ve Komatsu</span>
+    <p><strong>Sorun:</strong> ABD'li Builtwell Japon Komatsu'dan buldozer almak istiyor. Komatsu bedel gelmeden göndermek istemiyor; Builtwell mal gelmeden ödemek istemiyor. Dış ticarette güven sorunu.</p>
+    <p><strong>Çözüm:</strong> Builtwell'in bankası, örneğin 90 gün sonra belirli tutarı Komatsu'ya (veya BA kimin elindeyse ona) ödeyeceğini yazılı olarak taahhüt eder. Ödemeden artık Builtwell değil <mark>banka sorumludur</mark>.</p>
+    <p><strong>Piyasa aracına dönüşmesi:</strong> Komatsu ya 90 gün bekleyip tamamını alır, ya da BA'yı para piyasasında küçük iskontoyla satıp hemen nakit alır (1.000.000 dolarlık BA'yı 990.000 dolara satmak gibi). Başkaları alır, çünkü düşük riskli, kısa vadeli ve banka kredibilitesiyle desteklidir.</p>
+  </div>
+
+  <h3>7. Eurodolar</h3>
+  <p>Yabancı bankalarda (ABD dışında) veya Amerikan bankalarının yurt dışı şubelerinde tutulan <mark>ABD doları cinsinden mevduat</mark>.</p>
+  <div class="note trap">
+    <span class="label">Karıştırma</span>
+    <p>Adına rağmen <mark class="trap">euro para birimiyle ilgisi yoktur</mark>. Ad, mevduatların ilk olarak Avrupa'da (özellikle Londra'da) ortaya çıkmasından gelir. Teknik olarak Türk bankalarındaki dolar mevduatı da eurodolar tanımına uyar, çünkü ABD dışındadır.</p>
+  </div>
+  <p><strong>Köken:</strong> İkinci Dünya Savaşı'ndan sonra, Soğuk Savaş döneminde birçok ülke ve şirket istikrar için dolar tutmak istedi ama ABD bankalarında tutarlarsa mevduatın <mark>dondurulmasından veya el konulmasından</mark> korktu. Avrupa'daki, özellikle Londra'daki bankalar dolar mevduatı kabul etmeye başladı. Örnek: Japon şirket Londra'daki bankada 10 milyon dolar yatırır; banka bu doları petrol ithalatı için dolar arayan Fransız firmaya borç verebilir.</p>
+
+  <h3>Yedi aracın karşılaştırması</h3>
+  <div class="tablewrap"><table class="t">
+    <tr><th>Araç</th><th>Kim çıkarır / kim verir</th><th>Önemli ayrıntı</th></tr>
+    <tr><td>Hazine bonosu</td><td>Devlet</td><td>İskontolu; 4–52 hafta; en likit araç</td></tr>
+    <tr><td>Federal funds</td><td>Bankalar birbirine</td><td>Gecelik rezerv kredisi; Türkiye'de TLREF</td></tr>
+    <tr><td>Repo</td><td>Banka, işletme, finans kuruluşu</td><td>Sat ve geri al; teminatlı kredi gibi; genelde gecelik</td></tr>
+    <tr><td>Devredilebilir CD</td><td>Ticari banka</td><td>Faiz getirir; ikincil piyasada satılır; Türkiye'de yok</td></tr>
+    <tr><td>Finansman bonosu</td><td>Büyük, kredisi yüksek şirket</td><td>Teminatsız; ABD'de &lt; 270 gün; iskontolu</td></tr>
+    <tr><td>Banka kabullü poliçe</td><td>Banka garantisiyle (dış ticaret)</td><td>İskontolu; ödeme sorumlusu banka</td></tr>
+    <tr><td>Eurodolar</td><td>ABD dışındaki bankalar</td><td>ABD doları mevduatı; euro ile ilgisi yok</td></tr>
+  </table></div>
+
+  <nav class="pager" aria-label="Sunum gezinme">
+    <a href="#u5"><small>Önceki</small>Sunum 5: Bankalar ve merkez bankaları</a>
+    <a class="next" href="#quiz"><small>Sıradaki</small>Örnek quizler ve deneme sınavı</a>
+  </nav>
+  <div class="row-btns"><a class="btn" href="#quiz" data-quiz="u6">Bu sunumun quizini çöz</a><button class="btn ghost" data-done="u6">Okudum, tamamlandı say</button></div>
+</section>
+
+<!-- ================= QUIZ ================= -->
+<section class="view wide" id="quiz" aria-label="Örnek quizler">
+  <header class="u-head">
+    <div class="week">Sınav provası</div>
+    <h1>Örnek quizler ve deneme sınavı</h1>
+    <p class="lede">Her sunum için 13 soru, hepsinden rastgele seçilen 20 soruluk bir deneme sınavı. Seçtiğin anda doğru cevap ve açıklama görünür. Skorların bu tarayıcıda saklanır.</p>
+  </header>
+  <ul class="qsets" id="qsets"></ul>
+  <div id="qstage" aria-live="polite"></div>
+</section>
+
+</main>
+</div>
+
+<script src="assets/quiz-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
